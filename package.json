@@ -1,6 +1,6 @@
 {
   "name": "zyx-lib",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "ZYX component library",
   "author": "orlovssky",
   "keywords": [
@@ -9,10 +9,7 @@
     "components"
   ],
   "license": "ISC",
-  "files": [
-    "src",
-    "dist"
-  ],
+  "files": [ "dist" ],
   "main": "./dist/zyx-lib.umd.js",
   "module": "./dist/zyx-lib.es.js",
   "exports": {
@@ -37,8 +34,7 @@
     "eslint-plugin-vue": "^8.5.0",
     "typescript": "^4.6.2",
     "vite": "^2.8.5",
-    "vue-eslint-parser": "^8.3.0",
-    "vue-tsc": "^0.32.0"
+    "vue-eslint-parser": "^8.3.0"
   },
   "eslintConfig": {
     "root": true,
