@@ -1,6 +1,6 @@
 {
   "name": "zyx-lib",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "ZYX component library",
   "author": "orlovssky",
   "keywords": [
@@ -9,7 +9,9 @@
     "components"
   ],
   "license": "ISC",
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/zyx-lib.umd.js",
   "module": "./dist/zyx-lib.es.js",
   "exports": {
