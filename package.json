@@ -1,6 +1,6 @@
 {
   "name": "zyx-lib",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "ZYX component library",
   "author": "orlovssky",
   "keywords": [
@@ -18,8 +18,10 @@
     ".": {
       "import": "./dist/zyx-lib.es.js",
       "require": "./dist/zyx-lib.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "vite build"
   },
