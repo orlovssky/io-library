@@ -29,4 +29,8 @@ const { primary } = reactive(props);
   background: hsl(239, 100%, 27%);
   color: #fff;
 }
+.btn.secondary {
+  background: hsl(325, 100%, 21%);
+  color: #fff;
+}
 </style>
