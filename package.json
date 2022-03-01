@@ -1,6 +1,6 @@
 {
   "name": "zyx-lib",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "ZYX component library",
   "author": "orlovssky",
   "keywords": [
@@ -9,12 +9,7 @@
     "components"
   ],
   "license": "ISC",
-  "scripts": {
-    "build": "vite build"
-  },
-  "files": [
-    "dist"
-  ],
+  "files": [ "src", "dist" ],
   "main": "./dist/zyx-lib.umd.js",
   "module": "./dist/zyx-lib.es.js",
   "exports": {
@@ -22,6 +17,9 @@
       "import": "./dist/zyx-lib.es.js",
       "require": "./dist/zyx-lib.umd.js"
     }
+  },
+  "scripts": {
+    "build": "vite build"
   },
   "dependencies": {
     "vue": "^3.2.31"
