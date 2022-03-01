@@ -1,3 +1,4 @@
+import typescript       from '@rollup/plugin-typescript';
 import vue              from '@vitejs/plugin-vue';
 import path             from 'path';
 import { defineConfig } from 'vite';
@@ -28,6 +29,16 @@ export default defineConfig({
           vue: 'Vue',
         },
       },
+      plugins: [
+        typescript({
+          'target': 'es2020',
+          'rootDir': path.resolve(__dirname, 'src'),
+          'declaration': true,
+          'declarationDir': path.resolve(__dirname, 'dist'),
+          exclude: path.resolve(__dirname, 'node_modules/**'),
+          allowSyntheticDefaultImports: true
+        })
+      ]
     },
   },
 });
