@@ -1,1 +1,1 @@
-export { default as ZButton } from '@/components/Button.vue';
+export { default as ZButton } from '@/components/ZButton.vue';

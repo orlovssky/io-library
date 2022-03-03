@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive, defineProps, withDefaults } from 'vue';
+import { reactive } from 'vue';
 
 interface Props {
   primary?: boolean;
@@ -14,7 +14,7 @@ const { primary } = reactive(props);
 
 <template>
   <button
-    class="btn"
+    class="z-button"
     :class="{ primary }"
   >
     <slot />
@@ -22,14 +22,14 @@ const { primary } = reactive(props);
 </template>
 
 <style scoped>
-.btn {
+.z-button {
   padding: 0.5rem 1rem;
 }
-.btn.primary {
+.z-button.primary {
   background: hsl(239, 100%, 27%);
   color: #fff;
 }
-.btn.secondary {
+.z-button.secondary {
   background: hsl(325, 100%, 21%);
   color: #fff;
 }
