@@ -1,1 +1,3 @@
-export { default as ZButton } from '@/components/ZButton.vue';
+import '@/styles/main.scss';
+
+export { default as ZButton } from '@/components/ZButton';

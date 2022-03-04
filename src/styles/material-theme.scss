@@ -1,0 +1,620 @@
+$color-m-3-sys-light-primary: rgba(0,104,119,1);
+$color-m-3-sys-light-on-primary: rgba(255,255,255,1);
+$color-m-3-sys-light-primary-container: rgba(155,239,255,1);
+$color-m-3-sys-light-on-primary-container: rgba(0,31,37,1);
+$color-m-3-sys-light-secondary: rgba(74,98,103,1);
+$color-m-3-sys-light-on-secondary: rgba(255,255,255,1);
+$color-m-3-sys-light-secondary-container: rgba(205,231,237,1);
+$color-m-3-sys-light-on-secondary-container: rgba(5,31,35,1);
+$color-m-3-sys-light-tertiary: rgba(84,93,125,1);
+$color-m-3-sys-light-on-tertiary: rgba(255,255,255,1);
+$color-m-3-sys-light-tertiary-container: rgba(218,225,255,1);
+$color-m-3-sys-light-on-tertiary-container: rgba(16,26,55,1);
+$color-m-3-sys-light-error: rgba(186,27,27,1);
+$color-m-3-sys-light-error-container: rgba(255,218,212,1);
+$color-m-3-sys-light-on-error: rgba(255,255,255,1);
+$color-m-3-sys-light-on-error-container: rgba(65,0,1,1);
+$color-m-3-sys-light-background: rgba(251,253,254,1);
+$color-m-3-sys-light-on-background: rgba(25,28,29,1);
+$color-m-3-sys-light-surface: rgba(251,253,254,1);
+$color-m-3-sys-light-on-surface: rgba(25,28,29,1);
+$color-m-3-sys-light-surface-variant: rgba(219,228,230,1);
+$color-m-3-sys-light-on-surface-variant: rgba(63,72,74,1);
+$color-m-3-sys-light-outline: rgba(112,121,123,1);
+$color-m-3-sys-light-inverse-on-surface: rgba(239,241,242,1);
+$color-m-3-sys-light-inverse-surface: rgba(45,49,50,1);
+$color-m-3-sys-light-inverse-primary: rgba(81,215,238,1);
+$color-m-3-sys-light-shadow: rgba(0,0,0,1);
+$color-m-3-sys-dark-primary: rgba(81,215,238,1);
+$color-m-3-sys-dark-on-primary: rgba(0,54,63,1);
+$color-m-3-sys-dark-primary-container: rgba(0,78,90,1);
+$color-m-3-sys-dark-on-primary-container: rgba(155,239,255,1);
+$color-m-3-sys-dark-secondary: rgba(177,203,209,1);
+$color-m-3-sys-dark-on-secondary: rgba(28,52,57,1);
+$color-m-3-sys-dark-secondary-container: rgba(51,75,80,1);
+$color-m-3-sys-dark-on-secondary-container: rgba(205,231,237,1);
+$color-m-3-sys-dark-tertiary: rgba(188,197,234,1);
+$color-m-3-sys-dark-on-tertiary: rgba(37,47,76,1);
+$color-m-3-sys-dark-tertiary-container: rgba(60,70,101,1);
+$color-m-3-sys-dark-on-tertiary-container: rgba(218,225,255,1);
+$color-m-3-sys-dark-error: rgba(255,180,169,1);
+$color-m-3-sys-dark-error-container: rgba(147,0,6,1);
+$color-m-3-sys-dark-on-error: rgba(104,0,3,1);
+$color-m-3-sys-dark-on-error-container: rgba(255,218,212,1);
+$color-m-3-sys-dark-background: rgba(25,28,29,1);
+$color-m-3-sys-dark-on-background: rgba(225,227,227,1);
+$color-m-3-sys-dark-surface: rgba(25,28,29,1);
+$color-m-3-sys-dark-on-surface: rgba(225,227,227,1);
+$color-m-3-sys-dark-surface-variant: rgba(63,72,74,1);
+$color-m-3-sys-dark-on-surface-variant: rgba(191,200,202,1);
+$color-m-3-sys-dark-outline: rgba(137,146,148,1);
+$color-m-3-sys-dark-inverse-on-surface: rgba(25,28,29,1);
+$color-m-3-sys-dark-inverse-surface: rgba(225,227,227,1);
+$color-m-3-sys-dark-inverse-primary: rgba(0,104,119,1);
+$color-m-3-sys-dark-shadow: rgba(0,0,0,1);
+$color-m-3-ref-primary-primary-100: rgba(255,255,255,1);
+$color-m-3-ref-primary-primary-99: rgba(246,253,255,1);
+$color-m-3-ref-primary-primary-95: rgba(208,247,255,1);
+$color-m-3-ref-primary-primary-90: rgba(155,239,255,1);
+$color-m-3-ref-primary-primary-80: rgba(81,215,238,1);
+$color-m-3-ref-primary-primary-70: rgba(37,187,210,1);
+$color-m-3-ref-primary-primary-60: rgba(0,159,180,1);
+$color-m-3-ref-primary-primary-50: rgba(0,131,149,1);
+$color-m-3-ref-primary-primary-40: rgba(0,104,119,1);
+$color-m-3-ref-primary-primary-30: rgba(0,78,90,1);
+$color-m-3-ref-primary-primary-20: rgba(0,54,63,1);
+$color-m-3-ref-primary-primary-10: rgba(0,31,37,1);
+$color-m-3-ref-primary-primary-0: rgba(0,0,0,1);
+$color-m-3-ref-secondary-secondary-100: rgba(255,255,255,1);
+$color-m-3-ref-secondary-secondary-99: rgba(246,253,255,1);
+$color-m-3-ref-secondary-secondary-95: rgba(219,245,251,1);
+$color-m-3-ref-secondary-secondary-90: rgba(205,231,237,1);
+$color-m-3-ref-secondary-secondary-80: rgba(177,203,209,1);
+$color-m-3-ref-secondary-secondary-70: rgba(151,176,182,1);
+$color-m-3-ref-secondary-secondary-60: rgba(124,149,155,1);
+$color-m-3-ref-secondary-secondary-50: rgba(99,123,128,1);
+$color-m-3-ref-secondary-secondary-40: rgba(74,98,103,1);
+$color-m-3-ref-secondary-secondary-30: rgba(51,75,80,1);
+$color-m-3-ref-secondary-secondary-20: rgba(28,52,57,1);
+$color-m-3-ref-secondary-secondary-10: rgba(5,31,35,1);
+$color-m-3-ref-secondary-secondary-0: rgba(0,0,0,1);
+$color-m-3-ref-tertiary-tertiary-100: rgba(255,255,255,1);
+$color-m-3-ref-tertiary-tertiary-99: rgba(253,251,255,1);
+$color-m-3-ref-tertiary-tertiary-95: rgba(238,240,255,1);
+$color-m-3-ref-tertiary-tertiary-90: rgba(218,225,255,1);
+$color-m-3-ref-tertiary-tertiary-80: rgba(188,197,234,1);
+$color-m-3-ref-tertiary-tertiary-70: rgba(161,170,206,1);
+$color-m-3-ref-tertiary-tertiary-60: rgba(134,144,179,1);
+$color-m-3-ref-tertiary-tertiary-50: rgba(108,118,152,1);
+$color-m-3-ref-tertiary-tertiary-40: rgba(84,93,125,1);
+$color-m-3-ref-tertiary-tertiary-30: rgba(60,70,101,1);
+$color-m-3-ref-tertiary-tertiary-20: rgba(37,47,76,1);
+$color-m-3-ref-tertiary-tertiary-10: rgba(16,26,55,1);
+$color-m-3-ref-tertiary-tertiary-0: rgba(0,0,0,1);
+$color-m-3-ref-neutral-neutral-100: rgba(255,255,255,1);
+$color-m-3-ref-neutral-neutral-99: rgba(251,253,254,1);
+$color-m-3-ref-neutral-neutral-95: rgba(239,241,242,1);
+$color-m-3-ref-neutral-neutral-90: rgba(225,227,227,1);
+$color-m-3-ref-neutral-neutral-80: rgba(196,199,199,1);
+$color-m-3-ref-neutral-neutral-70: rgba(169,171,172,1);
+$color-m-3-ref-neutral-neutral-60: rgba(142,145,146,1);
+$color-m-3-ref-neutral-neutral-50: rgba(116,119,120,1);
+$color-m-3-ref-neutral-neutral-40: rgba(92,95,96,1);
+$color-m-3-ref-neutral-neutral-30: rgba(68,71,72,1);
+$color-m-3-ref-neutral-neutral-20: rgba(45,49,50,1);
+$color-m-3-ref-neutral-neutral-10: rgba(25,28,29,1);
+$color-m-3-ref-neutral-neutral-0: rgba(0,0,0,1);
+$color-m-3-ref-neutral-variant-neutral-variant-100: rgba(255,255,255,1);
+$color-m-3-ref-neutral-variant-neutral-variant-99: rgba(246,253,255,1);
+$color-m-3-ref-neutral-variant-neutral-variant-95: rgba(233,243,245,1);
+$color-m-3-ref-neutral-variant-neutral-variant-90: rgba(219,228,230,1);
+$color-m-3-ref-neutral-variant-neutral-variant-80: rgba(191,200,202,1);
+$color-m-3-ref-neutral-variant-neutral-variant-70: rgba(163,173,175,1);
+$color-m-3-ref-neutral-variant-neutral-variant-60: rgba(137,146,148,1);
+$color-m-3-ref-neutral-variant-neutral-variant-50: rgba(112,121,123,1);
+$color-m-3-ref-neutral-variant-neutral-variant-40: rgba(87,96,98,1);
+$color-m-3-ref-neutral-variant-neutral-variant-30: rgba(63,72,74,1);
+$color-m-3-ref-neutral-variant-neutral-variant-20: rgba(41,50,52,1);
+$color-m-3-ref-neutral-variant-neutral-variant-10: rgba(20,29,31,1);
+$color-m-3-ref-neutral-variant-neutral-variant-0: rgba(0,0,0,1);
+$color-m-3-ref-error-error-100: rgba(255,255,255,1);
+$color-m-3-ref-error-error-99: rgba(252,252,252,1);
+$color-m-3-ref-error-error-95: rgba(255,237,233,1);
+$color-m-3-ref-error-error-90: rgba(255,218,212,1);
+$color-m-3-ref-error-error-80: rgba(255,180,169,1);
+$color-m-3-ref-error-error-70: rgba(255,137,122,1);
+$color-m-3-ref-error-error-60: rgba(255,84,73,1);
+$color-m-3-ref-error-error-50: rgba(221,55,48,1);
+$color-m-3-ref-error-error-40: rgba(186,27,27,1);
+$color-m-3-ref-error-error-30: rgba(147,0,6,1);
+$color-m-3-ref-error-error-20: rgba(104,0,3,1);
+$color-m-3-ref-error-error-10: rgba(65,0,1,1);
+$color-m-3-ref-error-error-0: rgba(0,0,0,1);
+$color-m-3-source-seed: rgba(38,183,205,1);
+$color-m-3-source-primary: rgba(0,104,119,1);
+$color-m-3-source-secondary: rgba(74,98,103,1);
+$color-m-3-source-tertiary: rgba(84,93,125,1);
+$color-m-3-source-neutral: rgba(92,95,96,1);
+$color-m-3-source-neutral-variant: rgba(87,96,98,1);
+$color-m-3-source-error: rgba(186,27,27,1);
+$color-m-3-read-only-light-surface-1: rgba(251,253,254,1);
+$color-m-3-read-only-light-surface-2: rgba(251,253,254,1);
+$color-m-3-read-only-light-surface-3: rgba(251,253,254,1);
+$color-m-3-read-only-light-surface-4: rgba(251,253,254,1);
+$color-m-3-read-only-light-surface-5: rgba(251,253,254,1);
+$color-m-3-read-only-light-black: rgba(0,0,0,1);
+$color-m-3-read-only-light-white: rgba(255,255,255,1);
+$color-m-3-read-only-light-primary-opacity-0-08: rgba(0,104,119,0.080);
+$color-m-3-read-only-light-primary-opacity-0-12: rgba(0,104,119,0.120);
+$color-m-3-read-only-light-primary-opacity-0-16: rgba(0,104,119,0.160);
+$color-m-3-read-only-light-on-primary-opacity-0-08: rgba(255,255,255,0.080);
+$color-m-3-read-only-light-on-primary-opacity-0-12: rgba(255,255,255,0.120);
+$color-m-3-read-only-light-on-primary-opacity-0-16: rgba(255,255,255,0.160);
+$color-m-3-read-only-light-on-primary-container-opacity-0-08: rgba(0,31,37,0.080);
+$color-m-3-read-only-light-on-primary-container-opacity-0-12: rgba(0,31,37,0.120);
+$color-m-3-read-only-light-on-primary-container-opacity-0-16: rgba(0,31,37,0.160);
+$color-m-3-read-only-light-secondary-opacity-0-08: rgba(74,98,103,0.080);
+$color-m-3-read-only-light-secondary-opacity-0-12: rgba(74,98,103,0.120);
+$color-m-3-read-only-light-secondary-opacity-0-16: rgba(74,98,103,0.160);
+$color-m-3-read-only-light-on-secondary-opacity-0-08: rgba(255,255,255,0.080);
+$color-m-3-read-only-light-on-secondary-opacity-0-12: rgba(255,255,255,0.120);
+$color-m-3-read-only-light-on-secondary-opacity-0-16: rgba(255,255,255,0.160);
+$color-m-3-read-only-light-on-secondary-container-opacity-0-08: rgba(5,31,35,0.080);
+$color-m-3-read-only-light-on-secondary-container-opacity-0-12: rgba(5,31,35,0.120);
+$color-m-3-read-only-light-on-secondary-container-opacity-0-16: rgba(5,31,35,0.160);
+$color-m-3-read-only-light-tertiary-opacity-0-08: rgba(84,93,125,0.080);
+$color-m-3-read-only-light-tertiary-opacity-0-12: rgba(84,93,125,0.120);
+$color-m-3-read-only-light-tertiary-opacity-0-16: rgba(84,93,125,0.160);
+$color-m-3-read-only-light-on-tertiary-opacity-0-08: rgba(255,255,255,0.080);
+$color-m-3-read-only-light-on-tertiary-opacity-0-12: rgba(255,255,255,0.120);
+$color-m-3-read-only-light-on-tertiary-opacity-0-16: rgba(255,255,255,0.160);
+$color-m-3-read-only-light-on-tertiary-container-opacity-0-08: rgba(16,26,55,0.080);
+$color-m-3-read-only-light-on-tertiary-container-opacity-0-12: rgba(16,26,55,0.120);
+$color-m-3-read-only-light-on-tertiary-container-opacity-0-16: rgba(16,26,55,0.160);
+$color-m-3-read-only-light-primary-container-opacity-0-08: rgba(155,239,255,0.080);
+$color-m-3-read-only-light-primary-container-opacity-0-12: rgba(155,239,255,0.120);
+$color-m-3-read-only-light-primary-container-opacity-0-16: rgba(155,239,255,0.160);
+$color-m-3-read-only-light-secondary-container-opacity-0-08: rgba(205,231,237,0.080);
+$color-m-3-read-only-light-secondary-container-opacity-0-12: rgba(205,231,237,0.120);
+$color-m-3-read-only-light-secondary-container-opacity-0-16: rgba(205,231,237,0.160);
+$color-m-3-read-only-light-tertiary-container-opacity-0-08: rgba(218,225,255,0.080);
+$color-m-3-read-only-light-tertiary-container-opacity-0-12: rgba(218,225,255,0.120);
+$color-m-3-read-only-light-tertiary-container-opacity-0-16: rgba(218,225,255,0.160);
+$color-m-3-read-only-light-error-opacity-0-08: rgba(186,27,27,0.080);
+$color-m-3-read-only-light-error-opacity-0-12: rgba(186,27,27,0.120);
+$color-m-3-read-only-light-error-opacity-0-16: rgba(186,27,27,0.160);
+$color-m-3-read-only-light-error-container-opacity-0-08: rgba(255,218,212,0.080);
+$color-m-3-read-only-light-error-container-opacity-0-12: rgba(255,218,212,0.120);
+$color-m-3-read-only-light-error-container-opacity-0-16: rgba(255,218,212,0.160);
+$color-m-3-read-only-light-on-error-opacity-0-08: rgba(255,255,255,0.080);
+$color-m-3-read-only-light-on-error-opacity-0-12: rgba(255,255,255,0.120);
+$color-m-3-read-only-light-on-error-opacity-0-16: rgba(255,255,255,0.160);
+$color-m-3-read-only-light-on-error-container-opacity-0-08: rgba(65,0,1,0.080);
+$color-m-3-read-only-light-on-error-container-opacity-0-12: rgba(65,0,1,0.120);
+$color-m-3-read-only-light-on-error-container-opacity-0-16: rgba(65,0,1,0.160);
+$color-m-3-read-only-light-background-opacity-0-08: rgba(251,253,254,0.080);
+$color-m-3-read-only-light-background-opacity-0-12: rgba(251,253,254,0.120);
+$color-m-3-read-only-light-background-opacity-0-16: rgba(251,253,254,0.160);
+$color-m-3-read-only-light-on-background-opacity-0-08: rgba(25,28,29,0.080);
+$color-m-3-read-only-light-on-background-opacity-0-12: rgba(25,28,29,0.120);
+$color-m-3-read-only-light-on-background-opacity-0-16: rgba(25,28,29,0.160);
+$color-m-3-read-only-light-surface-opacity-0-08: rgba(251,253,254,0.080);
+$color-m-3-read-only-light-surface-opacity-0-12: rgba(251,253,254,0.120);
+$color-m-3-read-only-light-surface-opacity-0-16: rgba(251,253,254,0.160);
+$color-m-3-read-only-light-on-surface-opacity-0-08: rgba(25,28,29,0.080);
+$color-m-3-read-only-light-on-surface-opacity-0-12: rgba(25,28,29,0.120);
+$color-m-3-read-only-light-on-surface-opacity-0-16: rgba(25,28,29,0.160);
+$color-m-3-read-only-light-surface-variant-opacity-0-08: rgba(219,228,230,0.080);
+$color-m-3-read-only-light-surface-variant-opacity-0-12: rgba(219,228,230,0.120);
+$color-m-3-read-only-light-surface-variant-opacity-0-16: rgba(219,228,230,0.160);
+$color-m-3-read-only-light-on-surface-variant-opacity-0-08: rgba(63,72,74,0.080);
+$color-m-3-read-only-light-on-surface-variant-opacity-0-12: rgba(63,72,74,0.120);
+$color-m-3-read-only-light-on-surface-variant-opacity-0-16: rgba(63,72,74,0.160);
+$color-m-3-read-only-light-outline-opacity-0-08: rgba(112,121,123,0.080);
+$color-m-3-read-only-light-outline-opacity-0-12: rgba(112,121,123,0.120);
+$color-m-3-read-only-light-outline-opacity-0-16: rgba(112,121,123,0.160);
+$color-m-3-read-only-light-inverse-on-surface-opacity-0-08: rgba(239,241,242,0.080);
+$color-m-3-read-only-light-inverse-on-surface-opacity-0-12: rgba(239,241,242,0.120);
+$color-m-3-read-only-light-inverse-on-surface-opacity-0-16: rgba(239,241,242,0.160);
+$color-m-3-read-only-light-inverse-surface-opacity-0-08: rgba(45,49,50,0.080);
+$color-m-3-read-only-light-inverse-surface-opacity-0-12: rgba(45,49,50,0.120);
+$color-m-3-read-only-light-inverse-surface-opacity-0-16: rgba(45,49,50,0.160);
+$color-m-3-read-only-light-inverse-primary-opacity-0-08: rgba(81,215,238,0.080);
+$color-m-3-read-only-light-inverse-primary-opacity-0-12: rgba(81,215,238,0.120);
+$color-m-3-read-only-light-inverse-primary-opacity-0-16: rgba(81,215,238,0.160);
+$color-m-3-read-only-light-shadow-opacity-0-08: rgba(0,0,0,0.080);
+$color-m-3-read-only-light-shadow-opacity-0-12: rgba(0,0,0,0.120);
+$color-m-3-read-only-light-shadow-opacity-0-16: rgba(0,0,0,0.160);
+$color-m-3-read-only-dark-surface-1: rgba(25,28,29,1);
+$color-m-3-read-only-dark-surface-2: rgba(25,28,29,1);
+$color-m-3-read-only-dark-surface-3: rgba(25,28,29,1);
+$color-m-3-read-only-dark-surface-4: rgba(25,28,29,1);
+$color-m-3-read-only-dark-surface-5: rgba(25,28,29,1);
+$color-m-3-read-only-dark-white: rgba(255,255,255,1);
+$color-m-3-read-only-dark-black: rgba(0,0,0,1);
+$color-m-3-read-only-dark-primary-opacity-0-08: rgba(81,215,238,0.080);
+$color-m-3-read-only-dark-primary-opacity-0-12: rgba(81,215,238,0.120);
+$color-m-3-read-only-dark-primary-opacity-0-16: rgba(81,215,238,0.160);
+$color-m-3-read-only-dark-on-primary-opacity-0-08: rgba(0,54,63,0.080);
+$color-m-3-read-only-dark-on-primary-opacity-0-12: rgba(0,54,63,0.120);
+$color-m-3-read-only-dark-on-primary-opacity-0-16: rgba(0,54,63,0.160);
+$color-m-3-read-only-dark-on-primary-container-opacity-0-08: rgba(155,239,255,0.080);
+$color-m-3-read-only-dark-on-primary-container-opacity-0-12: rgba(155,239,255,0.120);
+$color-m-3-read-only-dark-on-primary-container-opacity-0-16: rgba(155,239,255,0.160);
+$color-m-3-read-only-dark-secondary-opacity-0-08: rgba(177,203,209,0.080);
+$color-m-3-read-only-dark-secondary-opacity-0-12: rgba(177,203,209,0.120);
+$color-m-3-read-only-dark-secondary-opacity-0-16: rgba(177,203,209,0.160);
+$color-m-3-read-only-dark-on-secondary-opacity-0-08: rgba(28,52,57,0.080);
+$color-m-3-read-only-dark-on-secondary-opacity-0-12: rgba(28,52,57,0.120);
+$color-m-3-read-only-dark-on-secondary-opacity-0-16: rgba(28,52,57,0.160);
+$color-m-3-read-only-dark-on-secondary-container-opacity-0-08: rgba(205,231,237,0.080);
+$color-m-3-read-only-dark-on-secondary-container-opacity-0-12: rgba(205,231,237,0.120);
+$color-m-3-read-only-dark-on-secondary-container-opacity-0-16: rgba(205,231,237,0.160);
+$color-m-3-read-only-dark-tertiary-opacity-0-08: rgba(188,197,234,0.080);
+$color-m-3-read-only-dark-tertiary-opacity-0-12: rgba(188,197,234,0.120);
+$color-m-3-read-only-dark-tertiary-opacity-0-16: rgba(188,197,234,0.160);
+$color-m-3-read-only-dark-on-tertiary-opacity-0-08: rgba(37,47,76,0.080);
+$color-m-3-read-only-dark-on-tertiary-opacity-0-12: rgba(37,47,76,0.120);
+$color-m-3-read-only-dark-on-tertiary-opacity-0-16: rgba(37,47,76,0.160);
+$color-m-3-read-only-dark-on-tertiary-container-opacity-0-08: rgba(218,225,255,0.080);
+$color-m-3-read-only-dark-on-tertiary-container-opacity-0-12: rgba(218,225,255,0.120);
+$color-m-3-read-only-dark-on-tertiary-container-opacity-0-16: rgba(218,225,255,0.160);
+$color-m-3-read-only-dark-primary-container-opacity-0-08: rgba(0,78,90,0.080);
+$color-m-3-read-only-dark-primary-container-opacity-0-12: rgba(0,78,90,0.120);
+$color-m-3-read-only-dark-primary-container-opacity-0-16: rgba(0,78,90,0.160);
+$color-m-3-read-only-dark-secondary-container-opacity-0-08: rgba(51,75,80,0.080);
+$color-m-3-read-only-dark-secondary-container-opacity-0-12: rgba(51,75,80,0.120);
+$color-m-3-read-only-dark-secondary-container-opacity-0-16: rgba(51,75,80,0.160);
+$color-m-3-read-only-dark-tertiary-container-opacity-0-08: rgba(60,70,101,0.080);
+$color-m-3-read-only-dark-tertiary-container-opacity-0-12: rgba(60,70,101,0.120);
+$color-m-3-read-only-dark-tertiary-container-opacity-0-16: rgba(60,70,101,0.160);
+$color-m-3-read-only-dark-error-opacity-0-08: rgba(255,180,169,0.080);
+$color-m-3-read-only-dark-error-opacity-0-12: rgba(255,180,169,0.120);
+$color-m-3-read-only-dark-error-opacity-0-16: rgba(255,180,169,0.160);
+$color-m-3-read-only-dark-error-container-opacity-0-08: rgba(147,0,6,0.080);
+$color-m-3-read-only-dark-error-container-opacity-0-12: rgba(147,0,6,0.120);
+$color-m-3-read-only-dark-error-container-opacity-0-16: rgba(147,0,6,0.160);
+$color-m-3-read-only-dark-on-error-opacity-0-08: rgba(104,0,3,0.080);
+$color-m-3-read-only-dark-on-error-opacity-0-12: rgba(104,0,3,0.120);
+$color-m-3-read-only-dark-on-error-opacity-0-16: rgba(104,0,3,0.160);
+$color-m-3-read-only-dark-on-error-container-opacity-0-08: rgba(255,218,212,0.080);
+$color-m-3-read-only-dark-on-error-container-opacity-0-12: rgba(255,218,212,0.120);
+$color-m-3-read-only-dark-on-error-container-opacity-0-16: rgba(255,218,212,0.160);
+$color-m-3-read-only-dark-background-opacity-0-08: rgba(25,28,29,0.080);
+$color-m-3-read-only-dark-background-opacity-0-12: rgba(25,28,29,0.120);
+$color-m-3-read-only-dark-background-opacity-0-16: rgba(25,28,29,0.160);
+$color-m-3-read-only-dark-on-background-opacity-0-08: rgba(225,227,227,0.080);
+$color-m-3-read-only-dark-on-background-opacity-0-12: rgba(225,227,227,0.120);
+$color-m-3-read-only-dark-on-background-opacity-0-16: rgba(225,227,227,0.160);
+$color-m-3-read-only-dark-surface-opacity-0-08: rgba(25,28,29,0.080);
+$color-m-3-read-only-dark-surface-opacity-0-12: rgba(25,28,29,0.120);
+$color-m-3-read-only-dark-surface-opacity-0-16: rgba(25,28,29,0.160);
+$color-m-3-read-only-dark-on-surface-opacity-0-08: rgba(225,227,227,0.080);
+$color-m-3-read-only-dark-on-surface-opacity-0-12: rgba(225,227,227,0.120);
+$color-m-3-read-only-dark-on-surface-opacity-0-16: rgba(225,227,227,0.160);
+$color-m-3-read-only-dark-surface-variant-opacity-0-08: rgba(63,72,74,0.080);
+$color-m-3-read-only-dark-surface-variant-opacity-0-12: rgba(63,72,74,0.120);
+$color-m-3-read-only-dark-surface-variant-opacity-0-16: rgba(63,72,74,0.160);
+$color-m-3-read-only-dark-on-surface-variant-opacity-0-08: rgba(191,200,202,0.080);
+$color-m-3-read-only-dark-on-surface-variant-opacity-0-12: rgba(191,200,202,0.120);
+$color-m-3-read-only-dark-on-surface-variant-opacity-0-16: rgba(191,200,202,0.160);
+$color-m-3-read-only-dark-outline-opacity-0-08: rgba(137,146,148,0.080);
+$color-m-3-read-only-dark-outline-opacity-0-12: rgba(137,146,148,0.120);
+$color-m-3-read-only-dark-outline-opacity-0-16: rgba(137,146,148,0.160);
+$color-m-3-read-only-dark-inverse-on-surface-opacity-0-08: rgba(25,28,29,0.080);
+$color-m-3-read-only-dark-inverse-on-surface-opacity-0-12: rgba(25,28,29,0.120);
+$color-m-3-read-only-dark-inverse-on-surface-opacity-0-16: rgba(25,28,29,0.160);
+$color-m-3-read-only-dark-inverse-surface-opacity-0-08: rgba(225,227,227,0.080);
+$color-m-3-read-only-dark-inverse-surface-opacity-0-12: rgba(225,227,227,0.120);
+$color-m-3-read-only-dark-inverse-surface-opacity-0-16: rgba(225,227,227,0.160);
+$color-m-3-read-only-dark-inverse-primary-opacity-0-08: rgba(0,104,119,0.080);
+$color-m-3-read-only-dark-inverse-primary-opacity-0-12: rgba(0,104,119,0.120);
+$color-m-3-read-only-dark-inverse-primary-opacity-0-16: rgba(0,104,119,0.160);
+$color-m-3-read-only-dark-shadow-opacity-0-08: rgba(0,0,0,0.080);
+$color-m-3-read-only-dark-shadow-opacity-0-12: rgba(0,0,0,0.120);
+$color-m-3-read-only-dark-shadow-opacity-0-16: rgba(0,0,0,0.160);
+@mixin text-style-m-3-display-1 {
+	font-size:64px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:76px;
+	letter-spacing:-0.5px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-display-2 {
+	font-size:57px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:64px;
+	letter-spacing:-0.25px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-display-3 {
+	font-size:45px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:52px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-1 {
+	font-size:36px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:44px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-2 {
+	font-size:32px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:40px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-3 {
+	font-size:28px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:36px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-4 {
+	font-size:24px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:32px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-5 {
+	font-size:22px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:28px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-6 {
+	font-size:18px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:24px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-subhead-1 {
+	font-size:16px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:24px;
+	letter-spacing:0.1px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-subhead-2 {
+	font-size:14px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:20px;
+	letter-spacing:0.1px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-button {
+	font-size:14px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:20px;
+	letter-spacing:0.1px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-body-1 {
+	font-size:16px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:24px;
+	letter-spacing:0.5px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-body-2 {
+	font-size:14px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:20px;
+	letter-spacing:0.25px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-caption {
+	font-size:12px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:16px;
+	letter-spacing:0.4px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-overline {
+	font-size:12px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:16px;
+	letter-spacing:0.5px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-label-small {
+	font-size:11px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:16px;
+	letter-spacing:0.5px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-display-large {
+	font-size:57px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:64px;
+	letter-spacing:-0.25px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-display-medium {
+	font-size:45px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:52px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-display-small {
+	font-size:36px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:44px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-large {
+	font-size:32px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:40px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-medium {
+	font-size:28px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:36px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-headline-small {
+	font-size:24px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:32px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-title-large {
+	font-size:22px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:28px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-title-medium {
+	font-size:16px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:24px;
+	letter-spacing:0.1px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-title-small {
+	font-size:14px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:20px;
+	letter-spacing:0.1px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-label-large {
+	font-size:14px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:20px;
+	letter-spacing:0.1px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-label-medium {
+	font-size:12px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:16px;
+	letter-spacing:0.5px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-label-small {
+	font-size:11px;
+	font-family:"Roboto";
+	font-weight:bold;
+	font-style:normal;
+	line-height:16px;
+	letter-spacing:0.5px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-body-large {
+	font-size:16px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:24px;
+	letter-spacing:0.5px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-body-medium {
+	font-size:14px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:20px;
+	letter-spacing:0.25px;
+	text-decoration:none;
+}
+@mixin text-style-m-3-body-small {
+	font-size:12px;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-style:normal;
+	line-height:16px;
+	letter-spacing:0.4px;
+	text-decoration:none;
+}
+@mixin effect-style-m-3-elevation-light-1 {
+	box-shadow:0px 1px 3px 1px rgba(0,0,0,0.150);
+}
+@mixin effect-style-m-3-elevation-light-2 {
+	box-shadow:0px 2px 6px 2px rgba(0,0,0,0.150);
+}
+@mixin effect-style-m-3-elevation-light-3 {
+	box-shadow:0px 1px 3px rgba(0,0,0,0.300);
+}
+@mixin effect-style-m-3-elevation-light-4 {
+	box-shadow:0px 2px 3px rgba(0,0,0,0.300);
+}
+@mixin effect-style-m-3-elevation-light-5 {
+	box-shadow:0px 4px 4px rgba(0,0,0,0.300);
+}
+@mixin effect-style-m-3-elevation-dark-1 {
+	box-shadow:0px 1px 2px rgba(0,0,0,0.300);
+}
+@mixin effect-style-m-3-elevation-dark-2 {
+	box-shadow:0px 1px 2px rgba(0,0,0,0.300);
+}
+@mixin effect-style-m-3-elevation-dark-3 {
+	box-shadow:0px 1px 3px rgba(0,0,0,0.300);
+}
+@mixin effect-style-m-3-elevation-dark-4 {
+	box-shadow:0px 2px 3px rgba(0,0,0,0.300);
+}
+@mixin effect-style-m-3-elevation-dark-5 {
+	box-shadow:0px 4px 4px rgba(0,0,0,0.300);
+}
