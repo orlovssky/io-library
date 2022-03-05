@@ -1,11 +1,56 @@
-@use "/src/styles/utilities/colors";
-
 .z-button {
   padding: 10px 24px;
-  
-  background: colors.$light-primary;
-  color: colors.$light-on-primary;
   border-radius: 100px;
 
-  @include colors.elevation-light-1;
+  &_color_primary {
+    background: var(--z-color-primary);
+    color: var(--z-color-on-primary);
+
+    &.z-button_elevated {
+      background: var(--z-color-surface-1);
+      color: var(--z-color-primary);
+    }
+  }
+  &_color_secondary {
+    background: var(--z-color-secondary);
+    color: var(--z-color-on-secondary);
+    
+    &.z-button_elevated {
+      background: var(--z-color-surface);
+      color: var(--z-color-on-surface);
+    }
+  }
+  &_color_tertiary{
+    background: var(--z-color-tertiary);
+    color: var(--z-color-on-tertiary);
+  }
+  &_color_error {
+    background: var(--z-color-error);
+    color: var(--z-color-on-error);
+  }
+
+  &:hover {
+    opacity: 0.92;
+    box-shadow: var(--z-box-shadow-elevation-1);
+  }
+  &:active {
+    opacity: 0.88;
+    box-shadow: none;
+  }
+
+  &_elevation_1 {
+    box-shadow: var(--z-box-shadow-elevation-1);
+  }
+  &_elevation_2 {
+    box-shadow: var(--z-box-shadow-elevation-2);
+  }
+  &_elevation_3 {
+    box-shadow: var(--z-box-shadow-elevation-3);
+  }
+  &_elevation_4 {
+    box-shadow: var(--z-box-shadow-elevation-4);
+  }
+  &_elevation_5 {
+    box-shadow: var(--z-box-shadow-elevation-5);
+  }
 }
