@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import ZApp    from '@/components/ZApp';
-import ZButton from '@/components/ZButton';
-import { ref } from 'vue';
+import { ZApp, ZTextField, ZButton } from '@/index';
+import { ref }                       from 'vue';
 
 const theme = ref('light');
 
@@ -16,21 +15,12 @@ const changeTheme = () => {
 
 <template>
   <z-app :theme="theme">
-    <z-button
-      color="primary"
-      type="elevated"
-    >
-      primary
-    </z-button>
-    <z-button color="secondary">
-      secondary
-    </z-button>
-    <z-button color="tertiary">
-      tertiary
-    </z-button>
-    <z-button color="error">
-      error
-    </z-button>
+    <z-text-field
+      style="margin: 100px;"
+      outlined
+      label="asdas"
+    />
+
     <z-button @click="changeTheme">
       changeTheme
     </z-button>

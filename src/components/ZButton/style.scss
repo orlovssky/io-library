@@ -1,56 +1,241 @@
+@use '/src/styles/utilities/mixins';
+@use '/src/styles/utilities/variables';
+
 .z-button {
-  padding: 10px 24px;
-  border-radius: 100px;
+  padding: 0.625em 1.5em;
+  border-radius: 0.8em;
+
+  &__wrapper {
+    display: inline-block;
+    &.z-button__wrapper_disabled {
+      cursor: not-allowed;
+    }
+  
+    & .z-button.z-button_disabled {
+      background: var(--z-color-disabled);
+      color: var(--z-color-on-disabled);
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+
+  &.z-button_size_medium {
+    font-size: 16px;
+  }
+  &.z-button_size_small {
+    font-size: 12px;
+  }
+  &.z-button_size_large {
+    font-size: 20px;
+  }
+  
+  &.z-button_round {
+    border-radius: 3em;
+  }
+
+  &.z-button_elevated {
+    background: var(--z-color-surface-1);
+    &:hover {
+      box-shadow: variables.$elevation-2;
+    }
+    &:active {
+      box-shadow: variables.$elevation-1;
+    }
+  }
+  &.z-button_outlined {
+    @include mixins.outlined-1;
+    background: var(--z-color-background);
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+  &.z-button_text {
+    background: none;
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
 
   &_color_primary {
     background: var(--z-color-primary);
     color: var(--z-color-on-primary);
+    &:hover {
+      background: var(--z-color-primary-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--z-color-primary-opacity-88);
+      box-shadow: none;
+    }
 
     &.z-button_elevated {
-      background: var(--z-color-surface-1);
       color: var(--z-color-primary);
+      &:hover {
+        background: var(--z-color-primary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-primary-opacity-12);
+      }
+    }
+    &.z-button_outlined {
+      color: var(--z-color-primary);
+      &:hover {
+        background: var(--z-color-primary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-primary-opacity-12);
+      }
+    }
+    &.z-button_text {
+      color: var(--z-color-primary);
+      &:hover {
+        background: var(--z-color-primary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-primary-opacity-12);
+      }
     }
   }
   &_color_secondary {
     background: var(--z-color-secondary);
     color: var(--z-color-on-secondary);
-    
+    &:hover {
+      background: var(--z-color-secondary-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--z-color-secondary-opacity-88);
+      box-shadow: none;
+    }
+
     &.z-button_elevated {
-      background: var(--z-color-surface);
-      color: var(--z-color-on-surface);
+      color: var(--z-color-secondary);
+      &:hover {
+        background: var(--z-color-secondary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-secondary-opacity-12);
+      }
+    }
+    &.z-button_outlined {
+      color: var(--z-color-secondary);
+      &:hover {
+        background: var(--z-color-secondary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-secondary-opacity-12);
+      }
+    }
+    &.z-button_text {
+      color: var(--z-color-secondary);
+      &:hover {
+        background: var(--z-color-secondary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-secondary-opacity-12);
+      }
     }
   }
   &_color_tertiary{
     background: var(--z-color-tertiary);
     color: var(--z-color-on-tertiary);
+    &:hover {
+      background: var(--z-color-tertiary-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--z-color-tertiary-opacity-88);
+      box-shadow: none;
+    }
+
+    &.z-button_elevated {
+      color: var(--z-color-tertiary);
+      &:hover {
+        background: var(--z-color-tertiary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-tertiary-opacity-12);
+      }
+    }
+    &.z-button_outlined {
+      color: var(--z-color-tertiary);
+      &:hover {
+        background: var(--z-color-tertiary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-tertiary-opacity-12);
+      }
+    }
+    &.z-button_text {
+      color: var(--z-color-tertiary);
+      &:hover {
+        background: var(--z-color-tertiary-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-tertiary-opacity-12);
+      }
+    }
   }
   &_color_error {
     background: var(--z-color-error);
     color: var(--z-color-on-error);
-  }
+    &:hover {
+      background: var(--z-color-error-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--z-color-error-opacity-88);
+      box-shadow: none;
+    }
 
-  &:hover {
-    opacity: 0.92;
-    box-shadow: var(--z-box-shadow-elevation-1);
-  }
-  &:active {
-    opacity: 0.88;
-    box-shadow: none;
+    &.z-button_elevated {
+      color: var(--z-color-error);
+      &:hover {
+        background: var(--z-color-error-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-error-opacity-12);
+      }
+    }
+    &.z-button_outlined {
+      color: var(--z-color-error);
+      &:hover {
+        background: var(--z-color-error-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-error-opacity-12);
+      }
+    }
+    &.z-button_text {
+      color: var(--z-color-error);
+      &:hover {
+        background: var(--z-color-error-opacity-08);
+      }
+      &:active {
+        background: var(--z-color-error-opacity-12);
+      }
+    }
   }
 
   &_elevation_1 {
-    box-shadow: var(--z-box-shadow-elevation-1);
+    box-shadow: variables.$elevation-1;
   }
   &_elevation_2 {
-    box-shadow: var(--z-box-shadow-elevation-2);
+    box-shadow: variables.$elevation-2;
   }
   &_elevation_3 {
-    box-shadow: var(--z-box-shadow-elevation-3);
+    box-shadow: variables.$elevation-3;
   }
   &_elevation_4 {
-    box-shadow: var(--z-box-shadow-elevation-4);
+    box-shadow: variables.$elevation-4;
   }
   &_elevation_5 {
-    box-shadow: var(--z-box-shadow-elevation-5);
+    box-shadow: variables.$elevation-5;
   }
 }
