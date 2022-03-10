@@ -2,7 +2,7 @@
 import { toRefs, computed } from 'vue';
 
 interface Props {
-  theme?: string;
+  theme?: 'light' | 'dark';
 }
 
 const props = withDefaults(defineProps<Props>(), {
