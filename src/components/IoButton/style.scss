@@ -1,0 +1,241 @@
+@use '/src/styles/utilities/mixins';
+@use '/src/styles/utilities/variables';
+
+.io-button {
+  padding: 0.625em 1.5em;
+  border-radius: 0.8em;
+
+  &__wrapper {
+    display: inline-block;
+    &.io-button__wrapper_disabled {
+      cursor: not-allowed;
+    }
+  
+    & .io-button.io-button_disabled {
+      background: var(--io-color-disabled);
+      color: var(--io-color-on-disabled);
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+
+  &_elevation_1 {
+    box-shadow: variables.$elevation-1;
+  }
+  &_elevation_2 {
+    box-shadow: variables.$elevation-2;
+  }
+  &_elevation_3 {
+    box-shadow: variables.$elevation-3;
+  }
+  &_elevation_4 {
+    box-shadow: variables.$elevation-4;
+  }
+  &_elevation_5 {
+    box-shadow: variables.$elevation-5;
+  }
+
+  &.io-button_size_medium {
+    font-size: 16px;
+  }
+  &.io-button_size_small {
+    font-size: 12px;
+  }
+  &.io-button_size_large {
+    font-size: 20px;
+  }
+  
+  &.io-button_round {
+    border-radius: 3em;
+  }
+
+  &.io-button_elevated {
+    background: var(--io-color-surface-1);
+    &:hover {
+      box-shadow: variables.$elevation-2;
+    }
+    &:active {
+      box-shadow: variables.$elevation-1;
+    }
+  }
+  &.io-button_outlined {
+    @include mixins.outlined-1;
+    background: var(--io-color-background);
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+  &.io-button_text {
+    background: none;
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &_color_primary {
+    background: var(--io-color-primary);
+    color: var(--io-color-on-primary);
+    &:hover {
+      background: var(--io-color-primary-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--io-color-primary-opacity-88);
+      box-shadow: none;
+    }
+
+    &.io-button_elevated {
+      color: var(--io-color-primary);
+      &:hover {
+        background: var(--io-color-primary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-primary-opacity-12);
+      }
+    }
+    &.io-button_outlined {
+      color: var(--io-color-primary);
+      &:hover {
+        background: var(--io-color-primary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-primary-opacity-12);
+      }
+    }
+    &.io-button_text {
+      color: var(--io-color-primary);
+      &:hover {
+        background: var(--io-color-primary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-primary-opacity-12);
+      }
+    }
+  }
+  &_color_secondary {
+    background: var(--io-color-secondary);
+    color: var(--io-color-on-secondary);
+    &:hover {
+      background: var(--io-color-secondary-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--io-color-secondary-opacity-88);
+      box-shadow: none;
+    }
+
+    &.io-button_elevated {
+      color: var(--io-color-secondary);
+      &:hover {
+        background: var(--io-color-secondary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-secondary-opacity-12);
+      }
+    }
+    &.io-button_outlined {
+      color: var(--io-color-secondary);
+      &:hover {
+        background: var(--io-color-secondary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-secondary-opacity-12);
+      }
+    }
+    &.io-button_text {
+      color: var(--io-color-secondary);
+      &:hover {
+        background: var(--io-color-secondary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-secondary-opacity-12);
+      }
+    }
+  }
+  &_color_tertiary{
+    background: var(--io-color-tertiary);
+    color: var(--io-color-on-tertiary);
+    &:hover {
+      background: var(--io-color-tertiary-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--io-color-tertiary-opacity-88);
+      box-shadow: none;
+    }
+
+    &.io-button_elevated {
+      color: var(--io-color-tertiary);
+      &:hover {
+        background: var(--io-color-tertiary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-tertiary-opacity-12);
+      }
+    }
+    &.io-button_outlined {
+      color: var(--io-color-tertiary);
+      &:hover {
+        background: var(--io-color-tertiary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-tertiary-opacity-12);
+      }
+    }
+    &.io-button_text {
+      color: var(--io-color-tertiary);
+      &:hover {
+        background: var(--io-color-tertiary-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-tertiary-opacity-12);
+      }
+    }
+  }
+  &_color_error {
+    background: var(--io-color-error);
+    color: var(--io-color-on-error);
+    &:hover {
+      background: var(--io-color-error-opacity-92);
+      box-shadow: variables.$elevation-1;
+    }
+    &:active {
+      background: var(--io-color-error-opacity-88);
+      box-shadow: none;
+    }
+
+    &.io-button_elevated {
+      color: var(--io-color-error);
+      &:hover {
+        background: var(--io-color-error-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-error-opacity-12);
+      }
+    }
+    &.io-button_outlined {
+      color: var(--io-color-error);
+      &:hover {
+        background: var(--io-color-error-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-error-opacity-12);
+      }
+    }
+    &.io-button_text {
+      color: var(--io-color-error);
+      &:hover {
+        background: var(--io-color-error-opacity-08);
+      }
+      &:active {
+        background: var(--io-color-error-opacity-12);
+      }
+    }
+  }
+}

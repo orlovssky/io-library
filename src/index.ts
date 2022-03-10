@@ -1,10 +1,10 @@
 import '@/styles/main.scss';
 
-export { default as ZApp } from '@/components/ZApp';
-export { default as ZButton } from '@/components/ZButton';
-export { default as ZTextField } from '@/components/ZTextField';
-export { default as ZDrawer } from '@/components/ZDrawer';
-export { ZList } from '@/components/ZList';
-export { ZListItem } from '@/components/ZList';
-export { ZListItemContent } from '@/components/ZList';
-export { ZListItemIcon } from '@/components/ZList';
+export { default as IoApp } from '@/components/IoApp';
+export { default as IoButton } from '@/components/IoButton';
+export { default as IoTextField } from '@/components/IoTextField';
+export { default as IoDrawer } from '@/components/IoDrawer';
+export { IoList } from '@/components/IoList';
+export { IoListItem } from '@/components/IoList';
+export { IoListItemContent } from '@/components/IoList';
+export { IoListItemIcon } from '@/components/IoList';

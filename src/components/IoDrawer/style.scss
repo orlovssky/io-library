@@ -1,4 +1,4 @@
-.z-drawer {
+.io-drawer {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -6,9 +6,9 @@
   padding: 8px 0;
   min-width: 56px;
   max-width: 50%;
-  background: var(--z-color-surface-1);
+  background: var(--io-color-surface-1);
   box-sizing: content-box;
-  border-right: 1px solid var(--z-color-outline);
+  border-right: 1px solid var(--io-color-outline);
 
   &__content {
     width: inherit;

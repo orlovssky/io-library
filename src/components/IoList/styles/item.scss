@@ -1,0 +1,21 @@
+.io-list-item {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-radius: 3em;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--io-color-secondary-container);
+  }
+  &:active {
+    background-color: var(--io-color-secondary-opacity-08);
+  }
+}
+
+.io-drawer_hovered {
+  & .io-list-item {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

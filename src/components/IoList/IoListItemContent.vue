@@ -1,9 +1,9 @@
 <template>
-  <div class="z-list-item__content">
+  <div class="io-list-item__content">
     <slot />
   </div>
 </template>
 
 <style scoped lang="scss">
-@import './style.scss';
+@import './styles/content.scss';
 </style>

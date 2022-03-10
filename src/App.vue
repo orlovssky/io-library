@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { 
-  ZApp,
-  ZDrawer,
-  ZButton,
-  ZList,
-  ZListItem,
-  ZListItemIcon,
-  ZListItemContent
+  IoApp,
+  IoDrawer,
+  IoButton,
+  IoList,
+  IoListItem,
+  IoListItemIcon,
 } from '@/index';
 import { ref } from 'vue';
 
@@ -22,14 +21,14 @@ const changeTheme = () => {
 </script>
 
 <template>
-  <z-app
+  <io-app
     :theme="theme"
     style="padding: 100px;"
   >
-    <z-drawer mini>
-      <z-list>
-        <z-list-item>
-          <z-list-item-icon>
+    <io-drawer mini>
+      <io-list>
+        <io-list-item>
+          <io-list-item-icon>
             <svg
               width="24"
               height="24"
@@ -44,23 +43,23 @@ const changeTheme = () => {
                 fill="#141B2C"
               />
             </svg>
-          </z-list-item-icon>
+          </io-list-item-icon>
           content
-        </z-list-item>
-        <z-list-item>
-          <z-list-item-icon>
+        </io-list-item>
+        <io-list-item>
+          <io-list-item-icon>
             asd
-          </z-list-item-icon>asd asdasd as dasaas
-        </z-list-item>
-        <z-list-item>asasdasdasddas</z-list-item>
-      </z-list>  
-    </z-drawer>
+          </io-list-item-icon>asd asdasd as dasaas
+        </io-list-item>
+        <io-list-item>asasdasdasddas</io-list-item>
+      </io-list>  
+    </io-drawer>
 
-    <z-button
+    <io-button
       disabled
       @click="changeTheme"
     >
       changeTheme
-    </z-button>
-  </z-app>
+    </io-button>
+  </io-app>
 </template>

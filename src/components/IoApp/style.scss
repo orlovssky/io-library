@@ -1,0 +1,111 @@
+@use "/src/styles/utilities/colors";
+
+.io-app {
+  min-height: 100vh;
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--io-color-background);
+  color: var(--io-color-on-background);
+
+  &_theme_light {
+    --io-color-background: #{colors.$light-background};
+    --io-color-on-background: #{colors.$light-on-background};
+    --io-color-primary: #{colors.$light-primary};
+    --io-color-on-primary: #{colors.$light-on-primary};
+    --io-color-primary-container: #{colors.$light-primary-container};
+    --io-color-on-primary-container: #{colors.$light-on-primary-container};
+    --io-color-primary-opacity-08: #{colors.$light-primary-opacity-08};
+    --io-color-primary-opacity-12: #{colors.$light-primary-opacity-12};
+    --io-color-primary-opacity-88: #{colors.$light-primary-opacity-88};
+    --io-color-primary-opacity-92: #{colors.$light-primary-opacity-92};
+    --io-color-secondary: #{colors.$light-secondary};
+    --io-color-on-secondary: #{colors.$light-on-secondary};
+    --io-color-secondary-container: #{colors.$light-secondary-container};
+    --io-color-on-secondary-container: #{colors.$light-on-secondary-container};
+    --io-color-secondary-opacity-08: #{colors.$light-secondary-opacity-08};
+    --io-color-secondary-opacity-12: #{colors.$light-secondary-opacity-12};
+    --io-color-secondary-opacity-88: #{colors.$light-secondary-opacity-88};
+    --io-color-secondary-opacity-92: #{colors.$light-secondary-opacity-92};
+    --io-color-tertiary: #{colors.$light-tertiary};
+    --io-color-on-tertiary: #{colors.$light-on-tertiary};
+    --io-color-tertiary-container: #{colors.$light-tertiary-container};
+    --io-color-on-tertiary-container: #{colors.$light-on-tertiary-container};
+    --io-color-tertiary-opacity-08: #{colors.$light-tertiary-opacity-08};
+    --io-color-tertiary-opacity-12: #{colors.$light-tertiary-opacity-12};
+    --io-color-tertiary-opacity-88: #{colors.$light-tertiary-opacity-88};
+    --io-color-tertiary-opacity-92: #{colors.$light-tertiary-opacity-92};
+    --io-color-error: #{colors.$light-error};
+    --io-color-error-container: #{colors.$light-error-container};
+    --io-color-on-error: #{colors.$light-on-error};
+    --io-color-on-error-container: #{colors.$light-on-error-container};
+    --io-color-error-opacity-08: #{colors.$light-error-opacity-08};
+    --io-color-error-opacity-12: #{colors.$light-error-opacity-12};
+    --io-color-error-opacity-88: #{colors.$light-error-opacity-88};
+    --io-color-error-opacity-92: #{colors.$light-error-opacity-92};
+    --io-color-surface: #{colors.$light-surface};
+    --io-color-on-surface: #{colors.$light-on-surface};
+    --io-color-surface-variant: #{colors.$light-surface-variant};
+    --io-color-on-surface-variant: #{colors.$light-on-surface-variant};
+    --io-color-surface-1: #{colors.$light-surface-1};
+    --io-color-surface-2: #{colors.$light-surface-2};
+    --io-color-surface-3: #{colors.$light-surface-3};
+    --io-color-surface-4: #{colors.$light-surface-4};
+    --io-color-surface-5: #{colors.$light-surface-5};
+    --io-color-outline: #{colors.$light-outline};
+    --io-color-disabled: #{colors.$light-disabled};
+    --io-color-on-disabled: #{colors.$light-on-disabled};
+  }
+  
+  &_theme_dark {
+    --io-color-background: #{colors.$dark-background};
+    --io-color-on-background: #{colors.$dark-on-background};
+    --io-color-primary: #{colors.$dark-primary};
+    --io-color-on-primary: #{colors.$dark-on-primary};
+    --io-color-primary-container: #{colors.$dark-primary-container};
+    --io-color-on-primary-container: #{colors.$dark-on-primary-container};
+    --io-color-primary-opacity-08: #{colors.$dark-primary-opacity-08};
+    --io-color-primary-opacity-12: #{colors.$dark-primary-opacity-12};
+    --io-color-primary-opacity-88: #{colors.$dark-primary-opacity-88};
+    --io-color-primary-opacity-92: #{colors.$dark-primary-opacity-92};
+    --io-color-secondary: #{colors.$dark-secondary};
+    --io-color-on-secondary: #{colors.$dark-on-secondary};
+    --io-color-secondary-container: #{colors.$dark-secondary-container};
+    --io-color-on-secondary-container: #{colors.$dark-on-secondary-container};
+    --io-color-secondary-opacity-08: #{colors.$dark-secondary-opacity-08};
+    --io-color-secondary-opacity-12: #{colors.$dark-secondary-opacity-12};
+    --io-color-secondary-opacity-88: #{colors.$dark-secondary-opacity-88};
+    --io-color-secondary-opacity-92: #{colors.$dark-secondary-opacity-92};
+    --io-color-tertiary: #{colors.$dark-tertiary};
+    --io-color-on-tertiary: #{colors.$dark-on-tertiary};
+    --io-color-tertiary-container: #{colors.$dark-tertiary-container};
+    --io-color-on-tertiary-container: #{colors.$dark-on-tertiary-container};
+    --io-color-tertiary-opacity-08: #{colors.$dark-tertiary-opacity-08};
+    --io-color-tertiary-opacity-12: #{colors.$dark-tertiary-opacity-12};
+    --io-color-tertiary-opacity-88: #{colors.$dark-tertiary-opacity-88};
+    --io-color-tertiary-opacity-92: #{colors.$dark-tertiary-opacity-92};
+    --io-color-error: #{colors.$dark-error};
+    --io-color-error-container: #{colors.$dark-error-container};
+    --io-color-on-error: #{colors.$dark-on-error};
+    --io-color-on-error-container: #{colors.$dark-on-error-container};
+    --io-color-error-opacity-08: #{colors.$dark-error-opacity-08};
+    --io-color-error-opacity-12: #{colors.$dark-error-opacity-12};
+    --io-color-error-opacity-88: #{colors.$dark-error-opacity-88};
+    --io-color-error-opacity-92: #{colors.$dark-error-opacity-92};
+    --io-color-surface: #{colors.$dark-surface};
+    --io-color-on-surface: #{colors.$dark-on-surface};
+    --io-color-surface-variant: #{colors.$dark-surface-variant};
+    --io-color-on-surface-variant: #{colors.$dark-on-surface-variant};
+    --io-color-surface-1: #{colors.$dark-surface-1};
+    --io-color-surface-2: #{colors.$dark-surface-2};
+    --io-color-surface-3: #{colors.$dark-surface-3};
+    --io-color-surface-4: #{colors.$dark-surface-4};
+    --io-color-surface-5: #{colors.$dark-surface-5};
+    --io-color-outline: #{colors.$dark-outline};
+    --io-color-disabled: #{colors.$dark-disabled};
+    --io-color-on-disabled: #{colors.$dark-on-disabled};
+  }
+}

@@ -13,8 +13,8 @@ export default defineConfig({
     target: 'esnext',
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'ZYXLib',
-      fileName: (format) => `zyx-lib.${format}.js`,
+      name: 'IOLib',
+      fileName: (format) => `io-lib.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
