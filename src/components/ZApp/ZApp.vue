@@ -12,16 +12,14 @@ const props = withDefaults(defineProps<Props>(), {
 const { theme } = toRefs(props);
 
 const classObject = computed(() => ({
+  'z-app': true,
   'z-app_theme_light': !theme.value || theme.value === 'light',
   'z-app_theme_dark': theme.value === 'dark',
 }));
 </script>
 
 <template>
-  <div
-    class="z-app" 
-    :class="classObject"
-  >
+  <div :class="classObject">
     <slot />
   </div>
 </template>

@@ -18,6 +18,7 @@ const zDrawerContent = ref<HTMLDivElement>();
 const { permanent, permanentMini, mini } = toRefs(props);
 
 const drawerClassObject = computed(() => ({
+  'z-drawer': true,
   'z-drawer_permanent': permanent.value,
   'z-drawer_permanent-mini': permanentMini.value,
   'z-drawer_mini': mini.value,
@@ -25,7 +26,6 @@ const drawerClassObject = computed(() => ({
 
 const handleZDrawerMouseEnter = () => {
   if (mini.value && zDrawer.value && zDrawerContent.value) {
-    console.log(zDrawerContent.value.scrollWidth);
     const width = zDrawerContent.value.scrollWidth + 8 + 48;
     const halfScreen = document.body.clientWidth / 2;
 
@@ -44,7 +44,6 @@ const handleZDrawerMouseLeave = () => {
 <template>
   <aside
     ref="zDrawer"
-    class="z-drawer"
     :class="drawerClassObject"
     @mouseenter="handleZDrawerMouseEnter"
     @mouseleave="handleZDrawerMouseLeave"

@@ -22,10 +22,12 @@ const props = withDefaults(defineProps<Props>(), {
 const { color, elevation, type, round, size, disabled } = toRefs(props);
 
 const wrapperClassObject = computed(() => ({
+  'z-button__wrapper': true,
   'z-button__wrapper_disabled': disabled.value,
 }));
 
 const buttonClassObject = computed(() => ({
+  'z-button': true,
   'z-button_filled': type.value === 'filled',
   'z-button_elevated': type.value === 'elevated',
   'z-button_outlined': type.value === 'outlined',
@@ -51,14 +53,8 @@ const buttonClassObject = computed(() => ({
 </script>
 
 <template>
-  <div
-    class="z-button__wrapper" 
-    :class="wrapperClassObject"
-  >
-    <button
-      class="z-button"
-      :class="buttonClassObject"
-    >
+  <div :class="wrapperClassObject">
+    <button :class="buttonClassObject">
       <slot />
     </button>
   </div>
