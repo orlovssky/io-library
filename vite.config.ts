@@ -3,7 +3,9 @@ import path             from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue()
+  ],
   resolve: {
     alias: {
       '@/': new URL('./src/', import.meta.url).pathname
