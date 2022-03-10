@@ -8,6 +8,7 @@ interface Props {
   round?: boolean;
   size?: 'medium' | 'small' | 'large';
   disabled?: boolean;
+  onClick?: (e: MouseEvent) => void,
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -17,6 +18,7 @@ const props = withDefaults(defineProps<Props>(), {
   round: false,
   size: 'medium',
   disabled: false,
+  onClick: undefined,
 });
 
 const { color, elevation, type, round, size, disabled } = toRefs(props);
@@ -54,7 +56,10 @@ const buttonClassObject = computed(() => ({
 
 <template>
   <div :class="wrapperClassObject">
-    <button :class="buttonClassObject">
+    <button
+      :class="buttonClassObject"
+      @click="onClick"
+    >
       <slot />
     </button>
   </div>
