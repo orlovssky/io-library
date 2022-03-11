@@ -26,7 +26,7 @@ const drawerClassObject = computed(() => ({
 
 const handleIoDrawerMouseEnter = () => {
   if (mini.value && ioDrawer.value && ioDrawerContent.value) {
-    const width = ioDrawerContent.value.scrollWidth + 8;
+    const width = ioDrawerContent.value.scrollWidth + 8 + 16;
     const halfScreen = document.body.clientWidth / 2;
 
     ioDrawer.value.style.width = `${width >= halfScreen ? halfScreen : width}px`;

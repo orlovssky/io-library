@@ -12,3 +12,10 @@
     background-color: var(--io-color-secondary-opacity-08);
   }
 }
+
+.io-drawer_hovered {
+  & .io-list-item {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

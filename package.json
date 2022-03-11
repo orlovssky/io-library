@@ -9,6 +9,10 @@
     "components"
   ],
   "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types"
+  },
   "files": [
     "dist"
   ],
@@ -22,10 +26,6 @@
     "./dist/style.css": "./dist/style.css"
   },
   "types": "./dist/types/index.d.ts",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types"
-  },
   "dependencies": {
     "vue": "^3.2.31"
   },
