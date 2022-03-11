@@ -11,11 +11,24 @@
   border-right: 1px solid var(--io-color-outline);
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: inherit;
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    &_space-between {
+      justify-content: space-between;
+    }
+    &_space-evenly {
+      justify-content: space-evenly;
+    }
+    &_space-around {
+      justify-content: space-around;
+    }
   }
   &_permanent-mini {
     width: 56px;

@@ -5,23 +5,35 @@ interface Props {
   permanent?: boolean;
   permanentMini?: boolean;
   mini?: boolean;
+  spaceBetween?: boolean;
+  spaceEvenly?: boolean;
+  spaceAround?: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
   permanent: true,
   permanentMini: false,
   mini: false,
+  spaceBetween: false,
+  spaceEvenly: false,
+  spaceAround: false,
 });
 
 const ioDrawer = ref<HTMLElement>();
 const ioDrawerContent = ref<HTMLDivElement>();
-const { permanent, permanentMini, mini } = toRefs(props);
+const { permanent, permanentMini, mini, spaceBetween, spaceEvenly, spaceAround } = toRefs(props);
 
 const drawerClassObject = computed(() => ({
   'io-drawer': true,
   'io-drawer_permanent': permanent.value,
   'io-drawer_permanent-mini': permanentMini.value,
   'io-drawer_mini': mini.value,
+}));
+const contentClassObject = computed(() => ({
+  'io-drawer__content': true,
+  'io-drawer__content_space-between': spaceBetween.value,
+  'io-drawer__content_space-evenly': spaceEvenly.value,
+  'io-drawer__content_space-around': spaceAround.value,
 }));
 
 const handleIoDrawerMouseEnter = () => {
@@ -50,7 +62,7 @@ const handleIoDrawerMouseLeave = () => {
   >
     <div
       ref="ioDrawerContent" 
-      class="io-drawer__content"
+      :class="contentClassObject"
     >
       <slot />
     </div>
