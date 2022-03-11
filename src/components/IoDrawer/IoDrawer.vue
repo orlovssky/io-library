@@ -37,18 +37,16 @@ const contentClassObject = computed(() => ({
 }));
 
 const handleIoDrawerMouseEnter = () => {
-  if (
-    mini.value &&
-    ioDrawer.value &&
-    ioDrawerContent.value &&
-    !ioDrawer.value.classList.contains('io-drawer_hovered')
-  ) {
-    const width = ioDrawerContent.value.scrollWidth + 16 + 16;
-    const halfScreen = document.body.clientWidth / 2;
+  if (!mini.value) return;
+  if (!ioDrawer.value) return;
+  if (!ioDrawerContent.value) return;
+  if (ioDrawer.value.classList.contains('io-drawer_hovered')) return;
+  
+  const width = ioDrawerContent.value.scrollWidth + 16 + 16;
+  const halfScreen = document.body.clientWidth / 2;
 
-    ioDrawer.value.style.width = `${width >= halfScreen ? halfScreen : width}px`;
-    ioDrawer.value.classList.add('io-drawer_hovered');
-  }
+  ioDrawer.value.style.width = `${width >= halfScreen ? halfScreen : width}px`;
+  ioDrawer.value.classList.add('io-drawer_hovered');
 };
 const handleIoDrawerMouseLeave = () => {
   if (mini.value && ioDrawer.value) {
