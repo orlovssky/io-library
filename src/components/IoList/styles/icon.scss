@@ -5,11 +5,4 @@
   width: 40px;
   min-width: 40px;
   margin-right: 8px;
-  transition: font-size .3s;
-}
-
-.io-drawer_hovered {
-  & .io-list-item__icon{
-    font-size: 28px;
-  }
 }
