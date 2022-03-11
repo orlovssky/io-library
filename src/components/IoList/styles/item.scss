@@ -3,14 +3,17 @@
   align-items: center;
   height: 56px;
   border-radius: 3em;
-  cursor: pointer;
-  transition: padding-left .13s, padding-right .13s,;
-  
-  &:hover {
-    background-color: var(--io-color-secondary-container);
-  }
-  &:active {
-    background-color: var(--io-color-secondary-opacity-08);
+  transition: padding-left .13s, padding-right .13s;
+
+  &_hoverable {
+    cursor: pointer;
+    
+    &:hover {
+      background-color: var(--io-color-secondary-container);
+    }
+    &:active {
+      background-color: var(--io-color-secondary-opacity-08);
+    }
   }
 }
 
