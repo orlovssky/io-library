@@ -8,3 +8,4 @@ export { IoList } from '@/components/IoList';
 export { IoListItem } from '@/components/IoList';
 export { IoListItemContent } from '@/components/IoList';
 export { IoListItemIcon } from '@/components/IoList';
+export { default as IoView } from '@/components/IoView';
