@@ -37,7 +37,12 @@ const contentClassObject = computed(() => ({
 }));
 
 const handleIoDrawerMouseEnter = () => {
-  if (mini.value && ioDrawer.value && ioDrawerContent.value) {
+  if (
+    mini.value &&
+    ioDrawer.value &&
+    ioDrawerContent.value &&
+    !ioDrawer.value.classList.contains('io-drawer_hovered')
+  ) {
     const width = ioDrawerContent.value.scrollWidth + 16 + 16;
     const halfScreen = document.body.clientWidth / 2;
 
