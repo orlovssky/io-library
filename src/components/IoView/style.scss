@@ -1,6 +1,4 @@
-.io-drawer_permanent-mini,
-.io-drawer_mini {
-  .io-view {
-    margin-left: 57px;
-  }
+.io-drawer_permanent-mini + .io-view,
+.io-drawer_mini + .io-view {
+  margin-left: 57px;
 }

@@ -6,6 +6,7 @@ interface Props {
   type?: string;
   label?: string;
   error?: boolean;
+  modelValue?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -13,10 +14,11 @@ const props = withDefaults(defineProps<Props>(), {
   label: '',
   outlined: false,
   error: false,
+  modelValue: '',
 });
 
 const focused = ref(false);
-const { type, label, outlined, error } = toRefs(props);
+const { type, label, outlined, error, modelValue } = toRefs(props);
 
 const wrapperClassObject = computed(() => ({
   'io-text-field__wrapper': true,
@@ -24,6 +26,15 @@ const wrapperClassObject = computed(() => ({
   'io-text-field__wrapper_filled': !outlined.value,
   'io-text-field__wrapper_error': error.value,
 }));
+
+const emit = defineEmits(['update:modelValue']);
+
+const handleInput = (event: Event) => {
+  const target = event.target as HTMLInputElement;
+  if (target) {
+    emit('update:modelValue', target.value);
+  }
+};
 </script>
 
 <template>
@@ -35,10 +46,12 @@ const wrapperClassObject = computed(() => ({
       {{ label }}
     </div>
     <input
+      :value="modelValue"
       class="io-text-field"
       :type="type"
       @focus="focused = true"
       @blur="focused = false"
+      @input="handleInput"
     >
   </div>
 </template>
