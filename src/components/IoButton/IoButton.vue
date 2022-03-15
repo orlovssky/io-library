@@ -8,6 +8,7 @@ interface Props {
   round?: boolean;
   size?: 'medium' | 'small' | 'large';
   disabled?: boolean;
+  loading?: boolean;
   onClick?: (e: MouseEvent) => void,
 }
 
@@ -18,14 +19,15 @@ const props = withDefaults(defineProps<Props>(), {
   round: false,
   size: 'medium',
   disabled: false,
+  loading: false,
   onClick: undefined,
 });
 
-const { color, elevation, type, round, size, disabled } = toRefs(props);
+const { color, elevation, type, round, size, disabled, loading } = toRefs(props);
 
 const wrapperClassObject = computed(() => ({
   'io-button__wrapper': true,
-  'io-button__wrapper_disabled': disabled.value,
+  'io-button__wrapper_disabled': disabled.value || loading.value,
 }));
 
 const buttonClassObject = computed(() => ({
@@ -39,7 +41,8 @@ const buttonClassObject = computed(() => ({
   'io-button_size_medium': !size.value || size.value === 'medium',
   'io-button_size_small': size.value === 'small',
   'io-button_size_large': size.value === 'large',
-  'io-button_disabled': disabled.value,
+  'io-button_disabled': disabled.value || loading.value,
+  'io-button_loading': loading.value,
   
   'io-button_color_primary': !color.value || color.value === 'primary',
   'io-button_color_secondary': color.value === 'secondary',
@@ -60,6 +63,18 @@ const buttonClassObject = computed(() => ({
       :class="buttonClassObject"
       @click="onClick"
     >
+      <div class="io-button__loader">
+        <svg viewBox="25 25 50 50">
+          <circle
+            cx="50"
+            cy="50"
+            r="20"
+            fill="none"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
       <slot />
     </button>
   </div>
