@@ -63,7 +63,10 @@ const buttonClassObject = computed(() => ({
       :class="buttonClassObject"
       @click="onClick"
     >
-      <div class="io-button__loader">
+      <div
+        v-if="loading"
+        class="io-button__loader"
+      >
         <svg viewBox="25 25 50 50">
           <circle
             cx="50"
