@@ -1,205 +1,167 @@
-$white: rgba(255,255,255,1);
-$black: rgba(0,0,0,1);
-
 // REF
-$primary-100: $white;
-$primary-99: rgba(253,251,255,1);
-$primary-95: rgba(236,240,255,1);
-$primary-90: rgba(214,226,255,1);
-$primary-80: rgba(172,199,255,1);
-$primary-70: rgba(126,171,255,1);
-$primary-60: rgba(77,142,254,1);
-$primary-50: rgba(43,116,226,1);
-$primary-40: rgba(0,90,197,1);
-$primary-30: rgba(0,67,151,1);
-$primary-20: rgba(0,46,108,1);
-$primary-10: rgba(0,26,67,1);
-$primary-0: $black;
+$black: 0, 0, 0;
+$white: 255, 255, 255;
 
-$secondary-100: $white;
-$secondary-99: $primary-99;
-$secondary-95: rgba(236,240,255,1);
-$secondary-90: rgba(218,226,249,1);
-$secondary-80: rgba(191,198,220,1);
-$secondary-70: rgba(164,171,192,1);
-$secondary-60: rgba(137,145,165,1);
-$secondary-50: rgba(111,119,139,1);
-$secondary-40: rgba(87,94,113,1);
-$secondary-30: rgba(63,71,89,1);
-$secondary-20: rgba(40,48,65,1);
-$secondary-10: rgba(20,27,44,1);
-$secondary-0: $black;
+$primary-99: 253, 251, 255;
+$primary-95: 237, 241, 255;
+$primary-90: 214, 226, 255;
+$primary-80: 172, 199, 255;
+$primary-70: 126, 171, 255;
+$primary-60: 77, 142, 254;
+$primary-50: 43, 116, 226;
+$primary-40: 0, 90, 197;
+$primary-30: 0, 67, 151;
+$primary-20: 0, 46, 108;
+$primary-10: 0, 26, 67;
 
-$tertiary-100: $white;
-$tertiary-99: rgba(252,252,252,1);
-$tertiary-95: rgba(255,234,254,1);
-$tertiary-90: rgba(251,215,251,1);
-$tertiary-80: rgba(222,187,223,1);
-$tertiary-70: rgba(194,161,195,1);
-$tertiary-60: rgba(166,135,168,1);
-$tertiary-50: rgba(139,110,141,1);
-$tertiary-40: rgba(113,85,116,1);
-$tertiary-30: rgba(88,62,91,1);
-$tertiary-20: rgba(64,40,67,1);
-$tertiary-10: rgba(41,19,45,1);
-$tertiary-0: $black;
+$secondary-99: 253, 251, 255;
+$secondary-95: 236, 240, 255;
+$secondary-90: 218, 226, 249;
+$secondary-80: 191, 198, 220;
+$secondary-70: 164, 171, 192;
+$secondary-60: 137, 145, 165;
+$secondary-50: 111, 119, 139;
+$secondary-40: 87, 94, 113;
+$secondary-30: 63, 71, 89;
+$secondary-20: 40, 48, 65;
+$secondary-10: 20, 27, 44;
 
-$neutral-100: $white;
-$neutral-99: $primary-99;
-$neutral-95: rgba(242,240,244,1);
-$neutral-90: rgba(228,226,230,1);
-$neutral-80: rgba(199,198,202,1);
-$neutral-70: rgba(172,171,175,1);
-$neutral-60: rgba(145,144,148,1);
-$neutral-50: rgba(119,119,123,1);
-$neutral-40: rgba(94,94,97,1);
-$neutral-30: rgba(70,70,73,1);
-$neutral-20: rgba(47,48,51,1);
-$neutral-10: rgba(27,27,30,1);
-$neutral-0: $black;
+$tertiary-99: 252, 252, 252;
+$tertiary-95: 255, 234, 254;
+$tertiary-90: 251, 215, 251;
+$tertiary-80: 222, 187, 223;
+$tertiary-70: 194, 161, 195;
+$tertiary-60: 166, 135, 168;
+$tertiary-50: 139, 110, 141;
+$tertiary-40: 113, 85, 116;
+$tertiary-30: 88, 62, 91;
+$tertiary-20: 64, 40, 67;
+$tertiary-10: 41, 19, 45;
 
-$neutral-variant-100: $white;
-$neutral-variant-99: $primary-99;
-$neutral-variant-95: rgba(239,240,250,1);
-$neutral-variant-90: rgba(225,226,236,1);
-$neutral-variant-80: rgba(196,198,208,1);
-$neutral-variant-70: rgba(169,171,181,1);
-$neutral-variant-60: rgba(142,144,153,1);
-$neutral-variant-50: rgba(116,119,127,1);
-$neutral-variant-40: rgba(92,94,102,1);
-$neutral-variant-30: rgba(68,71,79,1);
-$neutral-variant-20: rgba(45,48,56,1);
-$neutral-variant-10: rgba(25,27,34,1);
-$neutral-variant-0: $black;
+$neutral-99: 253, 251, 255;
+$neutral-95: 242, 240, 244;
+$neutral-90: 228, 226, 230;
+$neutral-80: 199, 198, 202;
+$neutral-70: 172, 171, 175;
+$neutral-60: 145, 144, 148;
+$neutral-50: 119, 119, 123;
+$neutral-40: 94, 94, 97;
+$neutral-30: 70, 70, 73;
+$neutral-20: 47, 48, 51;
+$neutral-10: 27, 27, 30;
 
-$error-100: $white;
-$error-99: rgba(252,252,252,1);
-$error-95: rgba(255,237,233,1);
-$error-90: rgba(255,218,212,1);
-$error-80: rgba(255,180,169,1);
-$error-70: rgba(255,137,122,1);
-$error-60: rgba(255,84,73,1);
-$error-50: rgba(221,55,48,1);
-$error-40: rgba(186,27,27,1);
-$error-30: rgba(147,0,6,1);
-$error-20: rgba(104,0,3,1);
-$error-10: rgba(65,0,1,1);
-$error-0: $black;
+$neutral-variant-99: 253, 251, 255;
+$neutral-variant-95: 239, 240, 250;
+$neutral-variant-90: 225, 226, 236;
+$neutral-variant-80: 196, 198, 208;
+$neutral-variant-70: 169, 171, 181;
+$neutral-variant-60: 142, 144, 153;
+$neutral-variant-50: 116, 119, 127;
+$neutral-variant-40: 92, 94, 102;
+$neutral-variant-30: 68, 71, 79;
+$neutral-variant-20: 45, 48, 56;
+$neutral-variant-10: 25, 27, 34;
+
+$error-99: 252, 252, 252;
+$error-95: 255, 237, 233;
+$error-90: 255, 218, 212;
+$error-80: 255, 180, 169;
+$error-70: 255, 137, 122;
+$error-60: 255, 84, 73;
+$error-50: 221, 55, 48;
+$error-40: 186, 27, 27;
+$error-30: 147, 0, 6;
+$error-20: 104, 0, 3;
+$error-10: 65, 0, 1;
+
+$success-99: 232, 245, 233;
+$success-95: 220, 241, 222;
+$success-90: 200, 230, 201;
+$success-80: 165, 214, 167;
+$success-70: 129, 199, 132;
+$success-60: 102, 187, 106;
+$success-50: 76, 175, 80;
+$success-40: 67, 160, 71;
+$success-30: 56, 142, 60;
+$success-20: 46, 125, 50;
+$success-10: 27, 94, 32;
 // REF END
 
 // SOURCE
-$seed: rgba(66,133,244,1);
+$seed: 66, 133, 244;
 $primary: $primary-40;
 $secondary: $secondary-40;
 $tertiary: $tertiary-40;
 $neutral: $neutral-40;
 $neutral-variant: $neutral-variant-40;
 $error: $error-40;
+$success: $success-40;
 // SOURCE END
 
 // SYS
+// LIGHT
+$light-background: $primary-99;
+$light-on-background: $neutral-10;
 
-$light-primary: $primary-40;
+$light-primary: $primary;
 $light-on-primary: $white;
-$light-primary-container: $primary-90;
-$light-on-primary-container: $primary-10;
-$light-primary-opacity-08: rgba(0,90,197,0.08);
-$light-primary-opacity-12: rgba(0,90,197,0.12);
-$light-primary-opacity-88: rgba(0,90,197,0.88);
-$light-primary-opacity-92: rgba(0,90,197,0.92);
-$light-secondary: $secondary-40;
+
+$light-secondary: $secondary;
 $light-on-secondary: $white;
 $light-secondary-container: $secondary-90;
 $light-on-secondary-container: $secondary-10;
-$light-secondary-opacity-08: rgba(87,94,113,0.08);
-$light-secondary-opacity-12: rgba(87,94,113,0.12);
-$light-secondary-opacity-88: rgba(87,94,113,0.88);
-$light-secondary-opacity-92: rgba(87,94,113,0.92);
-$light-tertiary: $tertiary-40;
+
+$light-tertiary: $tertiary;
 $light-on-tertiary: $white;
-$light-tertiary-container: $tertiary-90;
-$light-on-tertiary-container: $tertiary-10;
-$light-tertiary-opacity-08: rgba(113,85,116,0.08);
-$light-tertiary-opacity-12: rgba(113,85,116,0.12);
-$light-tertiary-opacity-88: rgba(113,85,116,0.88);
-$light-tertiary-opacity-92: rgba(113,85,116,0.92);
-$light-error: $error-40;
-$light-error-container: $error-90;
+
+$light-error: $error;
 $light-on-error: $white;
-$light-on-error-container: $error-10;
-$light-error-opacity-08: rgba(186,27,27,0.08);
-$light-error-opacity-12: rgba(186,27,27,0.12);
-$light-error-opacity-88: rgba(186,27,27,0.88);
-$light-error-opacity-92: rgba(186,27,27,0.92);
-$light-background: $primary-99;
-$light-on-background: $neutral-10;
+
+$light-success: $success;
+$light-on-success: $white;
+
 $light-surface: $primary-99;
 $light-on-surface: $neutral-10;
-$light-on-surface-opacity-12: rgba(25,27,34,0.08);
 $light-surface-variant: $neutral-variant-90;
 $light-on-surface-variant: $neutral-variant-30;
-$light-outline: $neutral-variant-50;
-$light-inverse-on-surface: $neutral-95;
-$light-inverse-surface: $neutral-20;
-$light-inverse-primary: $primary-80;
-$light-shadow: $black;
 $light-surface-1: linear-gradient(0deg, rgba(0, 90, 197, 0.05), rgba(0, 90, 197, 0.05)), #FDFBFF;
-$light-surface-2: linear-gradient(0deg, rgba(0, 90, 197, 0.08), rgba(0, 90, 197, 0.08)), #FDFBFF;
-$light-surface-3: linear-gradient(0deg, rgba(0, 90, 197, 0.11), rgba(0, 90, 197, 0.11)), #FDFBFF;
-$light-surface-4: linear-gradient(0deg, rgba(0, 90, 197, 0.12), rgba(0, 90, 197, 0.12)), #FDFBFF;
-$light-surface-5: linear-gradient(0deg, rgba(0, 90, 197, 0.14), rgba(0, 90, 197, 0.14)), #FDFBFF;
-$light-disabled: rgba(31,31,31,0.12);
-$light-on-disabled: rgba(27,27,30,0.38);
+
+$light-outline: $neutral-variant-50;
+
+$light-disabled: 31,31,31;
+$light-on-disabled: $light-on-surface;
+// LIGHT END
+
+// DARK
+$dark-background: $neutral-10;
+$dark-on-background: $neutral-90;
 
 $dark-primary: $primary-80;
 $dark-on-primary: $primary-20;
-$dark-primary-container: $primary-30;
-$dark-on-primary-container: $primary-90;
-$dark-primary-opacity-08: rgba(172,199,255,0.08);
-$dark-primary-opacity-12: rgba(172,199,255,0.12);
-$dark-primary-opacity-88: rgba(172,199,255,0.88);
-$dark-primary-opacity-92: rgba(172,199,255,0.92);
+
 $dark-secondary: $secondary-80;
 $dark-on-secondary: $secondary-20;
 $dark-secondary-container: $secondary-30;
 $dark-on-secondary-container: $secondary-90;
-$dark-secondary-opacity-08: rgba(191,198,220,0.08);
-$dark-secondary-opacity-12: rgba(191,198,220,0.12);
-$dark-secondary-opacity-88: rgba(191,198,220,0.88);
-$dark-secondary-opacity-92: rgba(191,198,220,0.92);
+
 $dark-tertiary: $tertiary-80;
 $dark-on-tertiary: $tertiary-20;
-$dark-tertiary-container: $tertiary-30;
-$dark-on-tertiary-container: $tertiary-90;
-$dark-tertiary-opacity-08: rgba(222,187,223,0.08);
-$dark-tertiary-opacity-12: rgba(222,187,223,0.12);
-$dark-tertiary-opacity-88: rgba(222,187,223,0.88);
-$dark-tertiary-opacity-92: rgba(222,187,223,0.92);
+
 $dark-error: $error-80;
-$dark-error-container: $error-30;
 $dark-on-error: $error-20;
-$dark-on-error-container: $error-90;
-$dark-error-opacity-08: rgba(255,180,169,0.08);
-$dark-error-opacity-12: rgba(255,180,169,0.12);
-$dark-error-opacity-88: rgba(255,180,169,0.88);
-$dark-error-opacity-92: rgba(255,180,169,0.92);
-$dark-background: $neutral-10;
-$dark-on-background: $neutral-90;
+
+$dark-success: $success-80;
+$dark-on-success: $success-10;
+
 $dark-surface: $neutral-10;
 $dark-on-surface: $neutral-90;
-$dark-on-surface-opacity-12: rgba(228,226,230,0.08);
 $dark-surface-variant: $neutral-variant-30;
 $dark-on-surface-variant: $neutral-variant-80;
-$dark-outline: $neutral-variant-60;
-$dark-inverse-on-surface: $neutral-10;
-$dark-inverse-surface: $neutral-90;
-$dark-inverse-primary: $primary-40;
-$dark-shadow: $black;
 $dark-surface-1: linear-gradient(0deg, rgba(172, 199, 255, 0.05), rgba(172, 199, 255, 0.05)), #1B1B1E;
-$dark-surface-2: linear-gradient(0deg, rgba(172, 199, 255, 0.08), rgba(172, 199, 255, 0.08)), #1B1B1E;
-$dark-surface-3: linear-gradient(0deg, rgba(172, 199, 255, 0.11), rgba(172, 199, 255, 0.11)), #1B1B1E;
-$dark-surface-4: linear-gradient(0deg, rgba(172, 199, 255, 0.12), rgba(172, 199, 255, 0.12)), #1B1B1E;
-$dark-surface-5: linear-gradient(0deg, rgba(172, 199, 255, 0.14), rgba(172, 199, 255, 0.14)), #1B1B1E;
-$dark-disabled: rgba(227,227,227,0.12);
-$dark-on-disabled: rgba(228,226,230,0.38);
+
+$dark-outline: $neutral-variant-60;
+
+$dark-disabled: 227,227,227;
+$dark-on-disabled: $dark-on-surface;
+// DARK END
 // SYS END

@@ -1,4 +1,3 @@
-@use '/src/styles/utilities/mixins';
 @use '/src/styles/utilities/variables';
 
 .io-button {
@@ -8,6 +7,7 @@
   padding: 0.625em 1.5em;
   border-radius: 0.8em;
 
+  // WRAPPER
   &__wrapper {
     display: inline-block;
 
@@ -16,37 +16,37 @@
     }
   
     & .io-button.io-button_disabled {
-      background: var(--io-color-disabled);
-      color: var(--io-color-on-disabled);
+      background: rgba(var(--io-color-disabled), .12);
+      color: rgba(var(--io-color-on-disabled), .38);
       pointer-events: none;
       user-select: none;
 
       &.io-button_text {
         background: none;
       }
+
       &.io-button_outlined {
-        border: 1px solid var(--io-color-on-surface-opacity-12);
+        border: 1px solid rgba(var(--io-color-on-surface), .12);
         background: none;
       }
     }
-  }
 
-  &_elevation_1 {
-    box-shadow: variables.$elevation-1;
+    & .io-button_loading.io-button_disabled {
+      color: transparent;
+    }
   }
-  &_elevation_2 {
-    box-shadow: variables.$elevation-2;
-  }
-  &_elevation_3 {
-    box-shadow: variables.$elevation-3;
-  }
-  &_elevation_4 {
-    box-shadow: variables.$elevation-4;
-  }
-  &_elevation_5 {
-    box-shadow: variables.$elevation-5;
-  }
+  // WRAPPER END
 
+  // ELEVATIONS
+  &_elevation_1 { box-shadow: variables.$elevation-1; }
+  &_elevation_2 { box-shadow: variables.$elevation-2; }
+  &_elevation_3 { box-shadow: variables.$elevation-3; }
+  &_elevation_4 { box-shadow: variables.$elevation-4; }
+  &_elevation_5 { box-shadow: variables.$elevation-5; }
+  // ELEVATIONS END
+
+
+  // SIZES
   &.io-button_size_medium {
     font-size: 16px;
 
@@ -71,204 +71,142 @@
       width: 24px;
     }
   }
-  
-  &.io-button_round {
-    border-radius: 3em;
-  }
+  // SIZES END
 
-  &.io-button_loading.io-button_disabled {
-    color: transparent;
-  }
+  // MODIFICATIONS
+  &.io-button_round { border-radius: 3em; }
+  // MODIFICATIONS END
 
   &.io-button_elevated {
     background: var(--io-color-surface-1);
-    &:hover {
-      box-shadow: variables.$elevation-2;
-    }
-    &:active {
-      box-shadow: variables.$elevation-1;
-    }
+
+    &:hover { box-shadow: variables.$elevation-2; }
+    &:active { box-shadow: variables.$elevation-1; }
   }
+
   &.io-button_outlined {
-    @include mixins.outlined-1;
-    background: var(--io-color-background);
-    &:hover {
-      box-shadow: none;
-    }
-    &:active {
-      box-shadow: none;
-    }
+    border: 1px solid rgb(var(--io-color-outline));
+    background: rgb(var(--io-color-background));
   }
+
   &.io-button_text {
     background: none;
-    &:hover {
-      box-shadow: none;
-    }
-    &:active {
-      box-shadow: none;
-    }
+  }
+
+  &.io-button_outlined,
+  &.io-button_text {
+    &:hover { box-shadow: none; }
+    &:active { box-shadow: none; }
   }
 
   &_color_primary {
-    background: var(--io-color-primary);
-    color: var(--io-color-on-primary);
+    background: rgb(var(--io-color-primary));
+    color: rgb(var(--io-color-on-primary));
+
     &:hover {
-      background: var(--io-color-primary-opacity-92);
+      background: rgba(var(--io-color-primary), .92);
       box-shadow: variables.$elevation-1;
     }
     &:active {
-      background: var(--io-color-primary-opacity-88);
+      background: rgba(var(--io-color-primary), .88);
       box-shadow: none;
     }
 
-    &.io-button_elevated {
-      color: var(--io-color-primary);
-      &:hover {
-        background: var(--io-color-primary-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-primary-opacity-12);
-      }
-    }
-    &.io-button_outlined {
-      color: var(--io-color-primary);
-      &:hover {
-        background: var(--io-color-primary-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-primary-opacity-12);
-      }
-    }
+    &.io-button_elevated,
+    &.io-button_outlined,
     &.io-button_text {
-      color: var(--io-color-primary);
+      color: rgb(var(--io-color-primary));
+
       &:hover {
-        background: var(--io-color-primary-opacity-08);
+        background: rgba(var(--io-color-primary), .08);
       }
       &:active {
-        background: var(--io-color-primary-opacity-12);
+        background: rgba(var(--io-color-primary), .12);
       }
     }
   }
+
   &_color_secondary {
-    background: var(--io-color-secondary);
-    color: var(--io-color-on-secondary);
+    background-color: rgb(var(--io-color-secondary));
+    color: rgb(var(--io-color-on-secondary));
+
     &:hover {
-      background: var(--io-color-secondary-opacity-92);
+      background-color: rgba(var(--io-color-secondary), .92);
       box-shadow: variables.$elevation-1;
     }
     &:active {
-      background: var(--io-color-secondary-opacity-88);
+      background-color: rgba(var(--io-color-secondary), .88);
       box-shadow: none;
     }
 
-    &.io-button_elevated {
-      color: var(--io-color-secondary);
-      &:hover {
-        background: var(--io-color-secondary-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-secondary-opacity-12);
-      }
-    }
-    &.io-button_outlined {
-      color: var(--io-color-secondary);
-      &:hover {
-        background: var(--io-color-secondary-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-secondary-opacity-12);
-      }
-    }
+    &.io-button_elevated,
+    &.io-button_outlined,
     &.io-button_text {
-      color: var(--io-color-secondary);
+      color: rgb(var(--io-color-secondary));
+
       &:hover {
-        background: var(--io-color-secondary-opacity-08);
+        background-color: rgba(var(--io-color-secondary), .08);
       }
       &:active {
-        background: var(--io-color-secondary-opacity-12);
+        background-color: rgba(var(--io-color-secondary), .12);
       }
     }
   }
-  &_color_tertiary{
-    background: var(--io-color-tertiary);
-    color: var(--io-color-on-tertiary);
+
+  &_color_tertiary {
+    background-color: rgb(var(--io-color-tertiary));
+    color: rgb(var(--io-color-on-tertiary));
+
     &:hover {
-      background: var(--io-color-tertiary-opacity-92);
+      background-color: rgba(var(--io-color-tertiary), .92);
       box-shadow: variables.$elevation-1;
     }
     &:active {
-      background: var(--io-color-tertiary-opacity-88);
+      background-color: rgba(var(--io-color-tertiary), .88);
       box-shadow: none;
     }
 
-    &.io-button_elevated {
-      color: var(--io-color-tertiary);
-      &:hover {
-        background: var(--io-color-tertiary-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-tertiary-opacity-12);
-      }
-    }
-    &.io-button_outlined {
-      color: var(--io-color-tertiary);
-      &:hover {
-        background: var(--io-color-tertiary-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-tertiary-opacity-12);
-      }
-    }
+    &.io-button_elevated,
+    &.io-button_outlined,
     &.io-button_text {
-      color: var(--io-color-tertiary);
+      color: rgb(var(--io-color-tertiary));
+
       &:hover {
-        background: var(--io-color-tertiary-opacity-08);
+        background-color: rgba(var(--io-color-tertiary), .08);
       }
       &:active {
-        background: var(--io-color-tertiary-opacity-12);
+        background-color: rgba(var(--io-color-tertiary), .12);
       }
     }
   }
+  
   &_color_error {
-    background: var(--io-color-error);
-    color: var(--io-color-on-error);
+    background-color: rgb(var(--io-color-error));
+    color: rgb(var(--io-color-on-error));
+
     &:hover {
-      background: var(--io-color-error-opacity-92);
+      background-color: rgba(var(--io-color-error), .92);
       box-shadow: variables.$elevation-1;
     }
     &:active {
-      background: var(--io-color-error-opacity-88);
+      background-color: rgba(var(--io-color-error), .88);
       box-shadow: none;
     }
 
-    &.io-button_elevated {
-      color: var(--io-color-error);
-      &:hover {
-        background: var(--io-color-error-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-error-opacity-12);
-      }
-    }
-    &.io-button_outlined {
-      color: var(--io-color-error);
-      &:hover {
-        background: var(--io-color-error-opacity-08);
-      }
-      &:active {
-        background: var(--io-color-error-opacity-12);
-      }
-    }
+    &.io-button_elevated,
+    &.io-button_outlined,
     &.io-button_text {
-      color: var(--io-color-error);
+      color: rgb(var(--io-color-error));
+
       &:hover {
-        background: var(--io-color-error-opacity-08);
+        background-color: rgba(var(--io-color-error), .08);
       }
       &:active {
-        background: var(--io-color-error-opacity-12);
+        background-color: rgba(var(--io-color-error), .12);
       }
     }
   }
+
   &__loader {
     position: absolute;
     top: 50%;
@@ -286,7 +224,7 @@
         animation: dash 1.5s ease-in-out infinite;
         stroke-linecap: round;
         stroke-width: 4px;
-        stroke: var(--io-color-on-disabled);
+        stroke: rgb(var(--io-color-on-disabled), .38);
       }
     }
 

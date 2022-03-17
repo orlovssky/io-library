@@ -3,12 +3,18 @@
   top: 0;
   bottom: 0;
   left: 0;
-  padding: 8px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   min-width: 56px;
   max-width: 50%;
   background: var(--io-color-surface-1);
   box-sizing: content-box;
-  border-right: 1px solid var(--io-color-outline);
+  border-right: 1px solid rgb(var(--io-color-outline));
+
+  &_mini {
+    width: 56px;
+    transition: width .13s;
+  }
 
   &__content {
     display: flex;
@@ -20,21 +26,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 
-    &_space-between {
-      justify-content: space-between;
-    }
-    &_space-evenly {
-      justify-content: space-evenly;
-    }
-    &_space-around {
-      justify-content: space-around;
-    }
-  }
-  &_permanent-mini {
-    width: 56px;
-  }
-  &_mini {
-    width: 56px;
-    transition: width .13s;
+    &_space-between { justify-content: space-between; }
+    &_space-evenly { justify-content: space-evenly; }
+    &_space-around { justify-content: space-around; }
   }
 }

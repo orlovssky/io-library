@@ -2,8 +2,6 @@
 import { toRefs, computed, ref } from 'vue';
 
 interface Props {
-  permanent?: boolean;
-  permanentMini?: boolean;
   mini?: boolean;
   spaceBetween?: boolean;
   spaceEvenly?: boolean;
@@ -11,9 +9,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  permanent: true,
-  permanentMini: false,
-  mini: false,
+  mini: true,
   spaceBetween: false,
   spaceEvenly: false,
   spaceAround: false,
@@ -21,12 +17,10 @@ const props = withDefaults(defineProps<Props>(), {
 
 const ioDrawer = ref<HTMLElement>();
 const ioDrawerContent = ref<HTMLDivElement>();
-const { permanent, permanentMini, mini, spaceBetween, spaceEvenly, spaceAround } = toRefs(props);
+const { mini, spaceBetween, spaceEvenly, spaceAround } = toRefs(props);
 
 const drawerClassObject = computed(() => ({
   'io-drawer': true,
-  'io-drawer_permanent': permanent.value,
-  'io-drawer_permanent-mini': permanentMini.value,
   'io-drawer_mini': mini.value,
 }));
 const contentClassObject = computed(() => ({

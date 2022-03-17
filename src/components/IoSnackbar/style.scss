@@ -1,0 +1,53 @@
+.io-snackbar {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  min-width: 200px;
+  border-radius: 4px;
+  animation-name: snackbar-up;
+  animation-duration: .13s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @keyframes snackbar-up {
+    0% { transform: translateX(-50%) scale(0); }
+    100% { transform: translateX(-50%) scale(1); }
+  }
+
+  &_hidden {
+    animation-name: snackbar-down;
+    animation-duration: .13s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    @keyframes snackbar-down {
+      0% { transform: translateX(-50%) scale(1); }
+      100% { transform: translateX(-50%) scale(0); }
+    }
+  }
+
+  &_color_primary {
+    color: rgb(var(--io-color-on-primary));
+    background-color: rgb(var(--io-color-primary));
+  }
+  &_color_secondary {
+    color: rgb(var(--io-color-on-secondary));
+    background-color: rgb(var(--io-color-secondary));
+  }
+  &_color_tertiary {
+    color: rgb(var(--io-color-on-tertiary));
+    background-color: rgb(var(--io-color-tertiary));
+  }
+  &_color_error {
+    color: rgb(var(--io-color-on-error));
+    background-color: rgb(var(--io-color-error));
+  }
+  &_color_success {
+    color: rgb(var(--io-color-on-success));
+    background-color: rgb(var(--io-color-success));
+  }
+}

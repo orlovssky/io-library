@@ -73,8 +73,6 @@ const buttonClassObject = computed(() => ({
             cy="50"
             r="20"
             fill="none"
-            stroke-width="2"
-            stroke-miterlimit="10"
           />
         </svg>
       </div>
