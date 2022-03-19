@@ -3,17 +3,20 @@ import { computed, ref, toRefs } from 'vue';
 
 interface Props {
   color?: 'primary' | 'secondary' | 'tertiary' | 'error' | 'success';
+  onClose?: () => void,
 }
 
 const props = withDefaults(defineProps<Props>(), {
   color: 'primary',
+  onClose: undefined,
 });
 
 const hidden = ref(false);
-const { color } = toRefs(props);
+const { color, onClose } = toRefs(props);
 
 setTimeout(() => {
   hidden.value = true;
+  onClose.value();
 }, 5000);
 
 const classObject = computed(() => ({

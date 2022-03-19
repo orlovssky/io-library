@@ -11,6 +11,7 @@
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  z-index: 2;
 
   @keyframes snackbar-up {
     0% { transform: translateX(-50%) scale(0); }
