@@ -1,6 +1,6 @@
 {
   "name": "io-library",
-  "version": "0.0.26",
+  "version": "0.0.31",
   "description": "IO component library",
   "author": "orlovssky",
   "keywords": [
@@ -27,6 +27,7 @@
   },
   "types": "./dist/types/index.d.ts",
   "devDependencies": {
+    "vue": "^3.2.31",
     "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
