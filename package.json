@@ -26,9 +26,6 @@
     "./dist/style.css": "./dist/style.css"
   },
   "types": "./dist/types/index.d.ts",
-  "dependencies": {
-    "vue": "^3.2.31"
-  },
   "devDependencies": {
     "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
