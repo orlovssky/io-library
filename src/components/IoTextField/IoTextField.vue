@@ -30,6 +30,7 @@ const wrapperClassObject = computed(() => ({
   'io-text-field__wrapper_outlined': outlined.value,
   'io-text-field__wrapper_focused': focused.value,
   'io-text-field__wrapper_error': error.value,
+  'io-text-field__wrapper_not-empty': modelValue.value,
 }));
 
 const emit = defineEmits(['update:modelValue', 'focus', 'blur']);
