@@ -16,18 +16,18 @@
     }
   
     & .io-button.io-button_disabled {
-      background: rgba(var(--io-color-disabled), .12);
+      background-color: rgba(var(--io-color-disabled), .12);
       color: rgba(var(--io-color-on-disabled), .38);
       pointer-events: none;
       user-select: none;
 
       &.io-button_text {
-        background: none;
+        background-color: none;
       }
 
       &.io-button_outlined {
         border: 1px solid rgba(var(--io-color-on-surface), .12);
-        background: none;
+        background-color: none;
       }
     }
 
@@ -86,11 +86,11 @@
 
   &.io-button_outlined {
     border: 1px solid rgb(var(--io-color-outline));
-    background: rgb(var(--io-color-background));
+    background-color: rgb(var(--io-color-background));
   }
 
   &.io-button_text {
-    background: none;
+    background-color: none;
   }
 
   &.io-button_outlined,
@@ -100,15 +100,15 @@
   }
 
   &_color_primary {
-    background: rgb(var(--io-color-primary));
+    background-color: rgb(var(--io-color-primary));
     color: rgb(var(--io-color-on-primary));
 
     &:hover {
-      background: rgba(var(--io-color-primary), .92);
+      background-color: rgba(var(--io-color-primary), .92);
       box-shadow: variables.$elevation-1;
     }
     &:active {
-      background: rgba(var(--io-color-primary), .88);
+      background-color: rgba(var(--io-color-primary), .88);
       box-shadow: none;
     }
 
@@ -118,10 +118,10 @@
       color: rgb(var(--io-color-primary));
 
       &:hover {
-        background: rgba(var(--io-color-primary), .08);
+        background-color: rgba(var(--io-color-primary), .08);
       }
       &:active {
-        background: rgba(var(--io-color-primary), .12);
+        background-color: rgba(var(--io-color-primary), .12);
       }
     }
   }

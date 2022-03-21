@@ -10,3 +10,4 @@ export { IoListItemContent } from '@/components/IoList';
 export { IoListItemIcon } from '@/components/IoList';
 export { default as IoView } from '@/components/IoView';
 export { default as IoSnackbar } from '@/components/IoSnackbar';
+export { default as IoSelect } from '@/components/IoSelect';

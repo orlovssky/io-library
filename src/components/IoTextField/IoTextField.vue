@@ -2,11 +2,13 @@
 import { toRefs, computed, ref } from 'vue';
 
 interface Props {
-  outlined?: boolean;
   type?: string;
   label?: string;
+  outlined?: boolean;
   error?: boolean;
   modelValue?: string;
+  readonly?: boolean;
+  onFocus?: (e: FocusEvent) => void;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -15,6 +17,8 @@ const props = withDefaults(defineProps<Props>(), {
   outlined: false,
   error: false,
   modelValue: '',
+  readonly: false,
+  onFocus: undefined,
 });
 
 const focused = ref(false);
@@ -24,17 +28,23 @@ const wrapperClassObject = computed(() => ({
   'io-text-field__wrapper': true,
   'io-text-field__wrapper_filled': !outlined.value,
   'io-text-field__wrapper_outlined': outlined.value,
-  'io-text-field__wrapper_focused': focused.value || !!modelValue.value,
+  'io-text-field__wrapper_focused': focused.value,
   'io-text-field__wrapper_error': error.value,
 }));
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(['update:modelValue', 'focus', 'blur']);
 
 const handleInput = (event: Event) => {
   const target = event.target as HTMLInputElement;
-  if (target) {
-    emit('update:modelValue', target.value);
-  }
+  if (target) emit('update:modelValue', target.value);
+};
+const handleFocus = (e: FocusEvent) => {
+  emit('focus', e);
+  focused.value = true;
+};
+const handleBlur = (e: FocusEvent) => {
+  emit('blur', e);
+  focused.value = false;
 };
 </script>
 
@@ -50,8 +60,9 @@ const handleInput = (event: Event) => {
       :value="modelValue"
       class="io-text-field"
       :type="type"
-      @focus="focused = true"
-      @blur="focused = false"
+      :readonly="readonly"
+      @focus="handleFocus"
+      @blur="handleBlur"
       @input="handleInput"
     >
   </div>

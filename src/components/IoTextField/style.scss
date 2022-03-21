@@ -44,7 +44,7 @@
     }
 
     & .io-text-field {
-      background: rgb(var(--io-color-surface-variant));
+      background-color: rgb(var(--io-color-surface-variant));
       color: rgb(var(--io-color-on-surface-variant));
       border-radius: 0.25em 0.25em 0 0;
       border-bottom: solid 1px rgb(var(--io-color-on-surface));
@@ -92,4 +92,8 @@
       transition: all .13s;
     }
   }
+}
+
+.io-select__wrapper .io-text-field {
+  cursor: pointer !important;
 }
