@@ -1,15 +1,26 @@
 <script setup lang="ts">
 import { toRefs, computed } from 'vue';
 
+import {
+  IoButtonType,
+  IoButtonColor,
+  IoButtonElevation,
+  IoButtonRound,
+  IoButtonSize,
+  IoButtonDisabled,
+  IoButtonLoading,
+  IoButtonOnClick,
+} from './types';
+
 interface Props {
-  type?: 'filled' | 'elevated' | 'outlined' | 'text';
-  color?: 'primary' | 'secondary' | 'tertiary' | 'error';
-  elevation?: 0 | 1 | 2 | 3 | 4 | 5 | '0' | '1' | '2' | '3' | '4' | '5' ;
-  round?: boolean;
-  size?: 'medium' | 'small' | 'large';
-  disabled?: boolean;
-  loading?: boolean;
-  onClick?: (e: MouseEvent) => void,
+  type?: IoButtonType;
+  color?: IoButtonColor;
+  elevation?: IoButtonElevation;
+  round?: IoButtonRound;
+  size?: IoButtonSize;
+  disabled?: IoButtonDisabled;
+  loading?: IoButtonLoading;
+  onClick?: IoButtonOnClick,
 }
 
 const props = withDefaults(defineProps<Props>(), {

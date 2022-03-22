@@ -1,8 +1,14 @@
 import '@/styles/main.scss';
 
-export { default as IoApp } from '@/components/IoApp';
-export { default as IoButton } from '@/components/IoButton';
-export { default as IoTextField } from '@/components/IoTextField';
+export { default as IoApp } from '@/components/IoApp/IoApp.vue';
+export * from '@/components/IoApp/types';
+
+export { default as IoButton } from '@/components/IoButton/IoButton.vue';
+export * from '@/components/IoButton/types';
+
+export { default as IoTextField } from '@/components/IoTextField/IoTextField.vue';
+export * from '@/components/IoTextField/types';
+
 export { default as IoDrawer } from '@/components/IoDrawer';
 export { IoList } from '@/components/IoList';
 export { IoListItem } from '@/components/IoList';

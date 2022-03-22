@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { toRefs, computed } from 'vue';
 
+import { IoAppTheme }       from './types';
+
 interface Props {
-  theme?: 'light' | 'dark';
+  theme?: IoAppTheme;
 }
 
 const props = withDefaults(defineProps<Props>(), {
