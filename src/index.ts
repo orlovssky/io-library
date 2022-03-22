@@ -9,11 +9,4 @@ export * from '@/components/IoButton/types';
 export { default as IoTextField } from '@/components/IoTextField/IoTextField.vue';
 export * from '@/components/IoTextField/types';
 
-export { default as IoDrawer } from '@/components/IoDrawer';
-export { IoList } from '@/components/IoList';
-export { IoListItem } from '@/components/IoList';
-export { IoListItemContent } from '@/components/IoList';
-export { IoListItemIcon } from '@/components/IoList';
-export { default as IoView } from '@/components/IoView';
-export { default as IoSnackbar } from '@/components/IoSnackbar';
-export { default as IoSelect } from '@/components/IoSelect';
+export { default as IoSnackbar } from '@/components/IoSnackbar/IoSnackbar.vue';

@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { computed, ref, toRefs } from 'vue';
 
+import {
+  IoSnackbarColor,
+  IoSnackbarOnClose,
+} from './types';
+
 interface Props {
-  color?: 'primary' | 'secondary' | 'tertiary' | 'error' | 'success';
-  onClose?: () => void;
+  color?: IoSnackbarColor;
+  onClose?: IoSnackbarOnClose;
 }
 
 const props = withDefaults(defineProps<Props>(), {
