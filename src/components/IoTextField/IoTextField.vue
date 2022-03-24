@@ -1,23 +1,15 @@
 <script setup lang="ts">
 import { toRefs, computed, ref } from 'vue';
 
-import {
-  IoTextFieldType,
-  IoTextFieldLabel,
-  IoTextFieldOutlined,
-  IoTextFieldError,
-  IoTextFieldModelValue,
-  IoTextFieldReadonly,
-  IoTextFieldOnFocus,
-} from './types';
+import { IoTextFieldOnFocus }    from './types';
 
 interface Props {
-  type?: IoTextFieldType;
-  label?: IoTextFieldLabel;
-  outlined?: IoTextFieldOutlined;
-  error?: IoTextFieldError;
-  modelValue?: IoTextFieldModelValue;
-  readonly?: IoTextFieldReadonly;
+  type?: string;
+  label?: string;
+  outlined?: boolean;
+  error?: boolean;
+  modelValue?: string;
+  readonly?: boolean;
   onFocus?: IoTextFieldOnFocus;
 }
 

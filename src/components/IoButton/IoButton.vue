@@ -5,10 +5,7 @@ import {
   IoButtonType,
   IoButtonColor,
   IoButtonElevation,
-  IoButtonRound,
   IoButtonSize,
-  IoButtonDisabled,
-  IoButtonLoading,
   IoButtonOnClick,
 } from './types';
 
@@ -16,10 +13,10 @@ interface Props {
   type?: IoButtonType;
   color?: IoButtonColor;
   elevation?: IoButtonElevation;
-  round?: IoButtonRound;
+  round?: boolean;
   size?: IoButtonSize;
-  disabled?: IoButtonDisabled;
-  loading?: IoButtonLoading;
+  disabled?: boolean;
+  loading?: boolean;
   onClick?: IoButtonOnClick,
 }
 

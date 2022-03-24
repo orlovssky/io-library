@@ -15,13 +15,17 @@ export default defineConfig({
     target: 'esnext',
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'IOLib',
-      fileName: (format) => `io-lib.${format}.js`,
+      name: 'IOLibrary',
+      fileName: (format) => `io-library.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue'],
+      external: [
+        'vue'
+      ],
       output: {
-        globals: { vue: 'Vue' },
+        globals: {
+          vue: 'Vue' 
+        },
       },
     },
   },
