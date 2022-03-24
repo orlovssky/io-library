@@ -88,22 +88,21 @@
       }
     }
 
-    &.io-text-field__wrapper_error {
-      outline: solid 1px rgb(var(--io-color-error));
-
-      & .io-text-field__label {
-        color: rgb(var(--io-color-error));
-      }
-    }
-
     &.io-text-field__wrapper_not-empty {
       & .io-text-field__label {
         font-size: 0.7em;
         top: -0.7em;
         left: 0.6rem;
-        color: rgb(var(--io-color-primary));
         background-color: rgb(var(--io-color-background));
         padding: 0 4px;
+      }
+    }
+
+    &.io-text-field__wrapper_error {
+      outline: solid 1px rgb(var(--io-color-error));
+
+      & .io-text-field__label {
+        color: rgb(var(--io-color-error));
       }
     }
 

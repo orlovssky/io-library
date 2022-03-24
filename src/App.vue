@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import { IoApp, IoButton } from '@/index';
+import { 
+  IoApp,
+  IoButton,
+  IoTextField
+} from '@/index';
 import { ref }             from 'vue';
 
 const clickedButton = ref('');
+const inputValue = ref('');
 </script>
 
 <template>
@@ -10,6 +15,39 @@ const clickedButton = ref('');
     theme="light"
     style="padding: 20px;"
   >
+    <!-- Round Filled -->
+    <div class="app__block">
+      <span class="app__title">Text fields</span>
+      <span class="app__subtitle">Input: {{ inputValue }}</span>
+      <div class="app__buttons">
+        <div>
+          <io-text-field
+            v-model="inputValue"
+          />
+        </div>
+        <div>
+          <io-text-field
+            v-model="inputValue"
+            outlined
+          />
+        </div>
+        <div>
+          <io-text-field
+            v-model="inputValue"
+            label="withLabel"
+          />
+        </div>
+        <div>
+          <io-text-field
+            v-model="inputValue"
+            label="withLabel"
+            outlined
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Round Filled end -->
+
     <!-- Round Filled -->
     <div class="app__block">
       <span class="app__title">Round Filled</span>
