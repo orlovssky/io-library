@@ -40,7 +40,8 @@ const wrapperClassObject = computed(() => ({
 
 const buttonClassObject = computed(() => ({
   'io-button': true,
-  'io-button_filled': type.value === 'filled',
+
+  'io-button_filled': !type.value || type.value === 'filled',
   'io-button_elevated': type.value === 'elevated',
   'io-button_outlined': type.value === 'outlined',
   'io-button_text': type.value === 'text',

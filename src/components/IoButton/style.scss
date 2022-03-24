@@ -16,23 +16,20 @@
     }
   
     & .io-button.io-button_disabled {
-      background-color: rgba(var(--io-color-disabled), .12);
       color: rgba(var(--io-color-on-disabled), .38);
+      background-color: rgba(var(--io-color-disabled), .12);
       pointer-events: none;
       user-select: none;
-
       &.io-button_text {
         background-color: transparent;
       }
-
       &.io-button_outlined {
-        outline: 1px solid rgba(var(--io-color-on-surface), .12);
         background-color: transparent;
+        outline: 1px solid rgba(var(--io-color-on-surface), .12);
       }
-    }
-
-    & .io-button_loading.io-button_disabled {
-      color: transparent;
+      &.io-button_loading {
+        color: transparent;
+      }
     }
   }
   // WRAPPER END
@@ -76,13 +73,14 @@
   // SIZES END
 
   // MODIFICATIONS
-  &.io-button_round { border-radius: 3em; }
+  &.io-button_round { 
+    border-radius: 3em;
+  }
   // MODIFICATIONS END
 
   // TYPES COMMON
   &.io-button_elevated {
     background-color: var(--io-gradient-surface-1);
-
     &:hover { box-shadow: variables.$elevation-2; }
     &:active { box-shadow: variables.$elevation-1; }
   }
