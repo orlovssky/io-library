@@ -71,7 +71,10 @@ const buttonClassObject = computed(() => ({
     <button
       :class="buttonClassObject"
       @click="onClick"
-    >
+    >  
+      <slot name="icon" />
+      <slot />
+
       <div
         v-if="loading"
         class="io-button__loader"
@@ -85,7 +88,6 @@ const buttonClassObject = computed(() => ({
           />
         </svg>
       </div>
-      <slot />
     </button>
   </div>
 </template>

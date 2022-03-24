@@ -10,3 +10,4 @@ export { default as IoTextField } from '@/components/IoTextField/IoTextField.vue
 export * from '@/components/IoTextField/types';
 
 export { default as IoSnackbar } from '@/components/IoSnackbar/IoSnackbar.vue';
+export { default as IoIcon } from '@/components/IoIcon/IoIcon.vue';

@@ -45,6 +45,7 @@
 
   // SIZES
   &.io-button_size_medium {
+    height: 40px;
     font-size: 16px;
 
     & .io-button__loader {
@@ -54,6 +55,7 @@
   }
 
   &.io-button_size_small {
+    height: 30px;
     font-size: 12px;
 
     & .io-button__loader {
@@ -63,6 +65,7 @@
   }
   
   &.io-button_size_large {
+    height: 48px;
     font-size: 20px;
     
     & .io-button__loader {
