@@ -3,12 +3,16 @@ import {
   IoApp,
   IoButton,
   IoTextField,
-  IoIcon
+  IoIcon,
+  IoSnackbar
 } from '@/index';
 import { ref }             from 'vue';
 
 const clickedButton = ref('');
 const inputValue = ref('');
+const handleClose = () => {
+  console.log('ioInput');
+};
 </script>
 
 <template>
@@ -16,6 +20,13 @@ const inputValue = ref('');
     theme="dark"
     style="padding: 20px;"
   >
+    <io-snackbar
+      closable
+      color="error"
+      @close="handleClose"
+    >
+      as
+    </io-snackbar>
     <!-- Round Filled -->
     <div class="app__block">
       <span class="app__title">Text fields</span>
@@ -110,7 +121,7 @@ const inputValue = ref('');
             :loading="clickedButton.startsWith('Sizes')"
             @click="clickedButton = 'Sizes small'"
           >
-            <template #icon>
+            <template #prepend>
               <io-icon>
                 <svg
                   width="160"
@@ -167,7 +178,7 @@ const inputValue = ref('');
           <io-button
             @click="clickedButton = 'Sizes medium (default)'"
           >
-            <template #icon>
+            <template #append>
               <io-icon>
                 <svg
                   width="160"
@@ -223,9 +234,10 @@ const inputValue = ref('');
         <div>
           <io-button
             size="large"
+            :loading="clickedButton.startsWith('Sizes')"
             @click="clickedButton = 'Sizes large'"
           >
-            <template #icon>
+            <template #prepend>
               <io-icon>
                 <svg
                   width="160"

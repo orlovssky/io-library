@@ -72,8 +72,13 @@ const buttonClassObject = computed(() => ({
       :class="buttonClassObject"
       @click="onClick"
     >  
-      <slot name="icon" />
-      <slot />
+      <slot name="prepend" />
+
+      <span class="io-button__text">
+        <slot />
+      </span>
+      
+      <slot name="append" />
 
       <div
         v-if="loading"

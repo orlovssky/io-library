@@ -7,32 +7,21 @@ body {
 }
 
 .io-button {
-  &.io-button_size_medium {
-    & .io-icon {
-      height: 20px;
-      width: 20px;
-    }
-  }
-  &.io-button_size_small {
-    & .io-icon {
-      height: 15px;
-      width: 15px;
-    }
-  }
-  &.io-button_size_large {
-    & .io-icon {
-      height: 23px;
-      width: 23px;
-    }
-  }
   & .io-icon {
-    margin-right: 0.2em;
-
+    height: calc(1em + 4px);
+    width: calc(1em + 4px);
     & svg {
       vertical-align: baseline;
       height: 100%;
       width: 100%;
       color: currentColor;
     }
+  }
+
+  & .io-icon:first-child {
+    margin-right: 0.3em;
+  }
+  & .io-button__text + .io-icon {
+    margin-left: 0.3em;
   }
 }

@@ -39,7 +39,9 @@ const classObject = computed(() => ({
 
 <template>
   <div :class="classObject">
-    <slot />
+    <span class="io-snackbar__slot">
+      <slot />
+    </span>
   </div>
 </template>
 

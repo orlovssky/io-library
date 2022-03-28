@@ -24,6 +24,7 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const focused = ref(false);
+const ioInput = ref<HTMLInputElement>();
 const { type, label, outlined, error, modelValue } = toRefs(props);
 
 const wrapperClassObject = computed(() => ({
@@ -52,7 +53,10 @@ const handleBlur = (e: FocusEvent) => {
 </script>
 
 <template>
-  <div :class="wrapperClassObject">
+  <div
+    :class="wrapperClassObject"
+    @click="ioInput?.focus()"
+  >
     <div
       v-if="label"
       class="io-text-field__label"
@@ -60,6 +64,7 @@ const handleBlur = (e: FocusEvent) => {
       {{ label }}
     </div>
     <input
+      ref="ioInput"
       :value="modelValue"
       class="io-text-field"
       :type="type"
